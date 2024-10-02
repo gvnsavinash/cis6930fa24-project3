@@ -1,18 +1,9 @@
-2024-10-01 03:24:46,882 - INFO - Starting the script
-2024-10-01 03:24:46,882 - INFO - Received incidents URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
-2024-10-01 03:24:46,882 - INFO - Starting main function
-2024-10-01 03:24:46,882 - INFO - Fetching incidents from URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
-2024-10-01 03:24:47,677 - INFO - Extracting incidents from PDF
-2024-10-01 03:24:48,455 - INFO - Creating new SQLite database
-2024-10-01 03:24:48,466 - INFO - Inserting 420 incidents into the database
-2024-10-01 03:24:48,472 - INFO - Printing incident counts by nature
-2024-10-01 03:24:48,501 - INFO - Main function completed successfully
-2024-10-01 03:30:44,879 - INFO - Starting the script
-2024-10-01 03:30:44,879 - INFO - Received incidents URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
-2024-10-01 03:30:44,879 - INFO - Starting main function
-2024-10-01 03:30:44,879 - INFO - Fetching incidents from URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
-2024-10-01 03:30:45,433 - INFO - Extracting incidents from PDF
-2024-10-01 03:30:46,166 - INFO - Creating new SQLite database
-2024-10-01 03:30:46,174 - INFO - Inserting 420 incidents into the database
-2024-10-01 03:30:46,180 - INFO - Printing incident counts by nature
-2024-10-01 03:30:46,201 - INFO - Main function completed successfully
+2024-10-01 20:40:41,212 - INFO - Starting the script
+2024-10-01 20:40:41,212 - INFO - Received incidents URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
+2024-10-01 20:40:41,212 - INFO - Starting main function
+2024-10-01 20:40:41,212 - INFO - Fetching incidents from URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
+2024-10-01 20:40:42,283 - INFO - Extracting incidents from PDF
+2024-10-01 20:40:43,101 - INFO - Creating new SQLite database
+2024-10-01 20:40:43,114 - INFO - Inserting 420 incidents into the database
+2024-10-01 20:40:43,117 - INFO - Printing incident counts by nature
+2024-10-01 20:40:43,137 - INFO - Main function completed successfully

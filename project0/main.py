@@ -1,8 +1,9 @@
 import argparse
 from logger import setup_logger, log_message
-import project0  # Assuming your project file is named project0.py
+import project0  
+import database
 
-# Use the centralized logger specifically for main.py
+# logger for main.py
 logger = setup_logger("main.log")  # This will save the log in the resources folder
 
 def main(url):
@@ -25,15 +26,15 @@ def main(url):
 
         # Create new database
         log_message(logger, 'info', "Creating new SQLite database")
-        db = project0.createdb()
+        db = database.createdb()
 
         # Insert data into the database
         log_message(logger, 'info', f"Inserting {len(date_list)} incidents into the database")
-        project0.populatedb(db, date_list, incident_number_list, location_list, nature_list, ori_list)
+        database.populatedb(db, date_list, incident_number_list, location_list, nature_list, ori_list)
 
         # Print incident counts
         log_message(logger, 'info', "Printing incident counts by nature")
-        project0.status(db)
+        database.status(db)
 
         log_message(logger, 'info', "Main function completed successfully")
     except Exception as e:
