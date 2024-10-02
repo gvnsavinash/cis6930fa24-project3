@@ -1,111 +1,175 @@
-cis6930fa24 -- Project 0 -- Incident Report Processing
-Name: [Your Name]
+Name: Venkata Naga Satya Avinash
+UFID: 4377-5641
 
-Project Description
-This project automates the downloading, parsing, and analysis of incident reports provided by the Norman Police Department in PDF format. It processes data such as incident time, number, location, nature, and ORI (Originating Agency Identifier), stores it in an SQLite database, and generates a summary report on the nature of incidents.
+## Project Description
 
-How to Install
-Install the necessary dependencies using a virtual environment like pipenv.
-After setting up the virtual environment, install dependencies with the appropriate commands.
-How to Run
-Run the main Python script, passing in the URL of the incident report PDF as an argument. The script will download, parse, and store the incident data into the database, and a summary report will be generated.
+This project involves extracting data from online PDFs provided by the Norman Police Department, reformatting the data, and storing it in an SQLite database. The goal is to build a Python script that can download incident reports, extract specific fields such as incident time, number, location, nature, and ORI, store them in a structured database, and generate summary reports showing the frequency of each incident nature.
 
-Example: Provide the URL of the incident report PDF to the script, which will handle the rest, including data extraction and generating the summary report.
+The project utilizes Python3, regular expressions, SQL, and Linux command line tools to achieve this. The primary tasks are downloading the incident PDF, extracting data, and inserting it into an SQLite database, followed by generating a report that shows the number of times each nature of incident appears.
 
-Functions
-main.py
-main():
-Description: The main driver function that coordinates the entire process, from downloading the PDF to storing the data in the database and generating a summary report. It calls other functions from the project for different tasks such as data extraction and database population.
-project0.py
-fetchincidents(url):
+## How to Install
 
-Description: Downloads the PDF file from the provided URL.
-Parameters: url (string): The URL of the PDF.
-Returns: The byte stream of the downloaded PDF.
-extractincidents(byte_pdf):
+1. Install the required dependencies using a package manager like `pipenv`.
+2. After setting up the environment, install the dependencies by running the installation commands.
+3. In this Project i used package/dependencies are : 
+    1. requests
+    2. pypdf 
+    3. pytest 
 
-Description: Extracts the details (incident time, number, location, nature, and ORI) from the byte stream of the PDF.
-Parameters: byte_pdf: Byte stream of the PDF file.
-Returns: Five lists containing the respective fields for all incidents extracted from the PDF.
-column_seperator(line):
+## Execution Steps
+Step 1: Set up the environment
+To install the required dependencies and set up the virtual environment:
 
-Description: Splits a line of text from the PDF into its respective fields: Date/Time, Incident Number, Location, Nature, ORI.
-Parameters: line: The string to be split.
-Returns: A tuple containing the extracted fields.
-status(conn):
+Open a terminal and navigate to the project directory.
+Run the following command to create the environment and install dependencies:
 
-Description: Generates a summary report based on the incident data stored in the database. It retrieves the number of occurrences of each incident nature, sorts them alphabetically, and prints them in a formatted string with each row separated by a pipe character (|).
-Parameters: conn: The database connection object.
-Returns: A string formatted summary of incidents and their occurrences.
-database.py
-createdb():
+bash
+pipenv install
 
-Description: Creates an SQLite database named normanpd.db and a table called incidents to store the parsed data from the incident reports.
-Returns: A connection object to the SQLite database.
-populatedb(conn, date_list, incident_number_list, location_list, nature_list, ori_list):
+Step 2: Running the main program
+To run the program, you need to provide the URL of the incident report PDF. The script will download the PDF, extract the relevant data, store it in the SQLite database, and generate a summary of incident natures.
 
-Description: Populates the incidents table in the SQLite database with the extracted data from the incident report.
-Parameters:
-conn: Database connection object.
-date_list, incident_number_list, location_list, nature_list, ori_list: Lists containing the data to insert.
-logger.py
-setup_logger(log_file):
+bash
+pipenv run python project0/main.py --incidents <PDF_URL>
+Replace <PDF_URL> with the actual URL of the incident report PDF. For example:
 
-Description: Sets up a logger for logging messages to a specified log file.
-Parameters: log_file: The path to the log file.
-Returns: A logger object that can be used to log messages.
-log_message(logger, level, message):
+Example
+pipenv run python project0/main.py --incidents https://www.normanok.gov/sites/default/files/documents/2024-08/2024-08-02_daily_incident_summary.pdf
 
-Description: Logs a message with a specified severity level (e.g., info, debug, error) using the provided logger object.
-Parameters:
-logger: The logger object.
-level: The severity level of the log.
-message: The message to be logged.
-test_file.py
-This file contains the unit tests for various components of the project.
+Step 3: Running the test cases
+The project includes unit tests to ensure the functionality of each component. To run the test cases, use the following command:
 
-test_databasecreation():
+bash
+pipenv run python -m pytest
+This will execute the test cases defined in the test_file.py, verifying the functionality of downloading PDFs, extracting incident data, populating the database, and generating the summary report.
 
-Description: Tests the database creation functionality by ensuring that a database connection is successfully established.
-Assertions: The connection object is not None.
-test_databaseinsertion():
 
-Description: Tests the insertion of data into the database. It verifies that data is correctly inserted into the incidents table by checking that the number of records is greater than zero.
-Assertions: The count of records in the incidents table is greater than 0.
-test_download_pdf():
+## Expected Output
+Upon running the program, you should expect output similar to the following:
 
-Description: Tests the downloading of the PDF from a specified URL to ensure the PDF byte stream is successfully retrieved.
-Assertions: The PDF stream is not None.
-test_extract_incidents_from_pdf():
+911 Call Nature Unknown|4
+Abdominal Pains/Problems|4
+Alarm|11
+Alarm Holdup/Panic|1
+Allergies/Envenomations|2
+Animal Complaint|3
+Animal Dead|2
+...
+This is a summary showing each incident nature along with the number of occurrences, with each field separated by a pipe (|) and each row terminated by a newline (\n).
 
-Description: Tests the extraction of incidents from the PDF by checking that the lists returned (dates, incident numbers, locations, natures, and ORIs) contain at least one element each.
-Assertions: All extracted lists contain at least one element.
-test_column_seperator():
+## Functions
 
-Description: Tests the column separator functionality, ensuring that the function splits a line of text into the correct components.
-Assertions: The split result matches the expected tuple.
-Database Development
-An SQLite database is used to store the incident report data. The database contains a single table called incidents with the following fields:
+### `main.py`
 
-incident_time (TEXT)
-incident_number (TEXT)
-incident_location (TEXT)
-nature (TEXT)
-incident_ori (TEXT)
-Data is inserted into the table using the pandas.DataFrame.to_sql() function for efficient insertion.
+- `main()`: 
+  - Coordinates the entire process, from downloading the PDF, extracting data, inserting it into the database, and printing a summary report.
+  - Parameters: 
+    - `url` (string): The URL of the PDF to download and process.
+  - Usage: 
+    - It takes the PDF URL from the command line, fetches the PDF, extracts data, populates the database, and prints the summary of incident natures.
 
-SQL Query for Summary Report
-The summary report of incidents by their nature is generated using this SQL query:
+### `project0.py`
 
-sql
-Copy code
-SELECT nature, count(*) as num_incidents 
-FROM incidents 
-GROUP BY nature 
-ORDER BY num_incidents ASC, nature;
-Bugs and Assumptions
-PDF Structure: The project assumes that the structure of the incident report PDF remains the same. Any changes to the structure may lead to issues in data extraction.
-Missing Fields: A record must have at least three fields. Records missing more than two fields will be discarded.
-Junk Data: The first two rows and the last row of the PDF are assumed to be junk data and are ignored.
-Write Access: The project assumes that the system has write access to the resources directory where logs and the database are stored.
-Field Order: The project assumes that the fields in the incident report PDF are in the following order: incident_time, incident_number, incident_location, nature, and incident_ori.
+- `fetchincidents(url)`:
+  - Downloads the PDF file from the specified URL.
+  - Parameters: `url` (string): URL of the PDF file.
+  - Returns: Byte stream of the downloaded PDF.
+  
+- `extractincidents(byte_pdf)`:
+  - Extracts the relevant incident details (Date/Time, Incident Number, Location, Nature, and ORI) from the PDF byte stream.
+  - Parameters: `byte_pdf`: Byte stream of the PDF.
+  - Returns: Five lists containing the respective fields.
+
+- `column_seperator(line)`:
+  - Splits a line of text from the PDF into its components: Date/Time, Incident Number, Location, Nature, and ORI.
+  - Parameters: `line`: The string line from the PDF.
+  - Returns: A tuple containing the extracted fields.
+
+
+
+### `database.py`
+
+- `createdb()`:
+  - Creates the SQLite database `normanpd.db` and the `incidents` table to store the extracted data.
+  - Returns: Database connection object.
+
+- `populatedb(conn, date_list, incident_number_list, location_list, nature_list, ori_list)`:
+  - Populates the `incidents` table in the SQLite database with the extracted data.
+  - Parameters: 
+    - `conn`: The database connection object.
+    - `date_list`, `incident_number_list`, `location_list`, `nature_list`, `ori_list`: Lists of data to insert into the table.
+
+- `status(conn)`:
+  - Generates a report showing the number of occurrences of each incident nature, sorted alphabetically and case-sensitively. The output is formatted with each field separated by a pipe character (`|`).
+  - Parameters: `conn`: Database connection object.
+  - Returns: A string formatted report of incidents and their occurrences.
+
+### `logger.py`
+
+- `setup_logger(log_file)`:
+  - Sets up the logging configuration, directing logs to a specified file.
+  - Parameters: `log_file`: Path to the log file.
+  - Returns: Logger object.
+
+- `log_message(logger, level, message)`:
+  - Logs messages with the specified level (info, debug, error).
+  - Parameters: 
+    - `logger`: The logger object.
+    - `level`: Severity level of the log.
+    - `message`: Message to log.
+
+### `test_file.py`
+
+This file contains unit tests for the main functions in the project.
+
+- `test_databasecreation()`:
+  - Tests that the database is successfully created and connected.
+  - Assertions: The database connection is not `None`.
+
+- `test_databaseinsertion()`:
+  - Tests that the data is correctly inserted into the `incidents` table.
+  - Assertions: The count of records in the `incidents` table is greater than zero.
+
+- `test_download_pdf()`:
+  - Tests that the PDF is downloaded from the provided URL.
+  - Assertions: The PDF stream is not `None`.
+
+- `test_extract_incidents_from_pdf()`:
+  - Tests that incident details are correctly extracted from the PDF.
+  - Assertions: All extracted lists contain at least one element.
+
+- `test_column_seperator()`:
+  - Tests that lines of text are correctly separated into their respective fields.
+  - Assertions: The result matches the expected tuple of extracted fields.
+
+## Database Development
+
+The SQLite database stores the incident data in the `incidents` table with the following fields:
+ - DateTime TEXT,
+ - IncidentNumber TEXT,
+ - Location TEXT,
+ - Nature TEXT,
+ - IncidentORI TEXT
+
+
+
+### Summary Query
+
+To generate a summary of incidents based on their nature, the following SQL query is used:
+
+```sql
+SELECT Nature, COUNT(*)
+            FROM incidents
+            GROUP BY Nature
+            ORDER BY Nature ASC
+```
+
+## Bugs and Assumptions
+
+1. PDF Structure: The project assumes that the PDF structure will remain consistent. If there are changes, data extraction may fail.
+2. Minimum Field Count: Each incident record must have at least three fields; otherwise, it will be discarded.
+3. Junk Data: The first two rows and the last row of the PDF are assumed to be junk and are ignored.
+4. Write Permissions: The script assumes that the `resources` directory has the necessary write permissions to store logs and the database.
+5. Field Order: The extracted data is assumed to follow a specific order: Date/Time, Incident Number, Location, Nature, ORI.
+
+---
