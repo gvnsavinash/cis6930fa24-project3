@@ -167,9 +167,6 @@ SELECT Nature, COUNT(*)
 ## Bugs and Assumptions
 
 1. PDF Structure: The project assumes that the PDF structure will remain consistent. If there are changes, data extraction may fail.
-2. Minimum Field Count: Each incident record must have at least three fields; otherwise, it will be discarded.
-3. Junk Data: The first two rows and the last row of the PDF are assumed to be junk and are ignored.
-4. Write Permissions: The script assumes that the `resources` directory has the necessary write permissions to store logs and the database.
-5. Field Order: The extracted data is assumed to follow a specific order: Date/Time, Incident Number, Location, Nature, ORI.
-
----
+2. Junk Data: The first two rows and the last row of the PDF are assumed to be junk and are ignored.
+3. Write Permissions: The script assumes that the `resources` directory has the necessary write permissions to store logs and the database.
+4. Field Order: The extracted data is assumed to follow a specific order: Date/Time, Incident Number, Location, Nature, ORI.
