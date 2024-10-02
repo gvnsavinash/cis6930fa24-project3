@@ -1,182 +1,182 @@
-2024-10-02 00:29:17,207 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
-2024-10-02 00:29:17,221 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
-2024-10-02 00:29:17,221 - INFO - Inserting extracted incidents into the database
-2024-10-02 00:29:17,223 - DEBUG - Successfully cleared the incidents table
-2024-10-02 00:29:17,227 - INFO - Successfully inserted incidents into the database
-2024-10-02 00:29:17,227 - INFO - Querying and printing status of incidents by nature
-2024-10-02 00:29:17,228 - DEBUG - Nature: 911 Call Nature Unknown, Count: 4
-2024-10-02 00:29:17,228 - DEBUG - Nature: Abdominal Pains/Problems, Count: 4
-2024-10-02 00:29:17,228 - DEBUG - Nature: Alarm, Count: 11
-2024-10-02 00:29:17,228 - DEBUG - Nature: Alarm Holdup/Panic, Count: 1
-2024-10-02 00:29:17,228 - DEBUG - Nature: Allergies/Envenomations, Count: 2
-2024-10-02 00:29:17,228 - DEBUG - Nature: Animal Complaint, Count: 3
-2024-10-02 00:29:17,230 - DEBUG - Nature: Animal Dead, Count: 2
-2024-10-02 00:29:17,230 - DEBUG - Nature: Animal Injured, Count: 1
-2024-10-02 00:29:17,230 - DEBUG - Nature: Animal Livestock, Count: 1
-2024-10-02 00:29:17,230 - DEBUG - Nature: Animal at Large, Count: 3
-2024-10-02 00:29:17,230 - DEBUG - Nature: Assault, Count: 1
-2024-10-02 00:29:17,230 - DEBUG - Nature: Assault EMS Needed, Count: 2
-2024-10-02 00:29:17,230 - DEBUG - Nature: Assist Police, Count: 1
-2024-10-02 00:29:17,230 - DEBUG - Nature: Back Pain, Count: 2
-2024-10-02 00:29:17,230 - DEBUG - Nature: Barking Dog, Count: 2
-2024-10-02 00:29:17,230 - DEBUG - Nature: Body Reported, Count: 1
-2024-10-02 00:29:17,230 - DEBUG - Nature: Breathing Problems, Count: 8
-2024-10-02 00:29:17,230 - DEBUG - Nature: Burglary, Count: 1
-2024-10-02 00:29:17,231 - DEBUG - Nature: COP DDACTS, Count: 1
-2024-10-02 00:29:17,231 - DEBUG - Nature: COP Problem Solving, Count: 1
-2024-10-02 00:29:17,231 - DEBUG - Nature: COP Relationships, Count: 5
-2024-10-02 00:29:17,231 - DEBUG - Nature: Cardiac Respritory Arrest, Count: 2
-2024-10-02 00:29:17,231 - DEBUG - Nature: Check Area, Count: 6
-2024-10-02 00:29:17,231 - DEBUG - Nature: Chest Pain, Count: 8
-2024-10-02 00:29:17,231 - DEBUG - Nature: Contact a Subject, Count: 23
-2024-10-02 00:29:17,231 - DEBUG - Nature: Convulsion/Seizure, Count: 6
-2024-10-02 00:29:17,231 - DEBUG - Nature: Debris in Roadway, Count: 1
-2024-10-02 00:29:17,232 - DEBUG - Nature: Diabetic Problems, Count: 2
-2024-10-02 00:29:17,232 - DEBUG - Nature: Disturbance/Domestic, Count: 19
-2024-10-02 00:29:17,232 - DEBUG - Nature: Extra Patrol, Count: 2
-2024-10-02 00:29:17,232 - DEBUG - Nature: Falls, Count: 4
-2024-10-02 00:29:17,232 - DEBUG - Nature: Fight, Count: 3
-2024-10-02 00:29:17,232 - DEBUG - Nature: Fire Alarm, Count: 3
-2024-10-02 00:29:17,232 - DEBUG - Nature: Fire Carbon Monoxide Alarm, Count: 2
-2024-10-02 00:29:17,232 - DEBUG - Nature: Fire Gas Leak, Count: 2
-2024-10-02 00:29:17,232 - DEBUG - Nature: Fire Residential, Count: 2
-2024-10-02 00:29:17,234 - DEBUG - Nature: Follow Up, Count: 4
-2024-10-02 00:29:17,234 - DEBUG - Nature: Found Item, Count: 2
-2024-10-02 00:29:17,234 - DEBUG - Nature: Fraud, Count: 4
-2024-10-02 00:29:17,234 - DEBUG - Nature: Harassment / Threats Report, Count: 4
-2024-10-02 00:29:17,234 - DEBUG - Nature: Headache, Count: 2
-2024-10-02 00:29:17,234 - DEBUG - Nature: Heart Problems/AICD, Count: 2
-2024-10-02 00:29:17,234 - DEBUG - Nature: Hemorrhage/Lacerations, Count: 6
-2024-10-02 00:29:17,234 - DEBUG - Nature: Hit and Run, Count: 3
-2024-10-02 00:29:17,234 - DEBUG - Nature: Larceny, Count: 10
-2024-10-02 00:29:17,234 - DEBUG - Nature: Loud Party, Count: 1
-2024-10-02 00:29:17,234 - DEBUG - Nature: MVA Non Injury, Count: 8
-2024-10-02 00:29:17,234 - DEBUG - Nature: MVA With Injuries, Count: 11
-2024-10-02 00:29:17,234 - DEBUG - Nature: Medical Call Pd Requested, Count: 2
-2024-10-02 00:29:17,236 - DEBUG - Nature: Missing Person, Count: 2
-2024-10-02 00:29:17,236 - DEBUG - Nature: Motorist Assist, Count: 5
-2024-10-02 00:29:17,236 - DEBUG - Nature: Mutual Aid, Count: 3
-2024-10-02 00:29:17,236 - DEBUG - Nature: Nature, Count: 1
-2024-10-02 00:29:17,236 - DEBUG - Nature: Noise Complaint, Count: 4
-2024-10-02 00:29:17,236 - DEBUG - Nature: Open Door/Premises Check, Count: 1
-2024-10-02 00:29:17,237 - DEBUG - Nature: Overdose/Poisoning, Count: 1
-2024-10-02 00:29:17,237 - DEBUG - Nature: Parking Problem, Count: 15
-2024-10-02 00:29:17,237 - DEBUG - Nature: Pick Up Partner, Count: 3
-2024-10-02 00:29:17,237 - DEBUG - Nature: Public Assist, Count: 6
-2024-10-02 00:29:17,238 - DEBUG - Nature: Reckless Driving, Count: 3
-2024-10-02 00:29:17,238 - DEBUG - Nature: Road Rage, Count: 1
-2024-10-02 00:29:17,238 - DEBUG - Nature: Runaway or Lost Child, Count: 8
-2024-10-02 00:29:17,238 - DEBUG - Nature: Shooting Stabbing Penetrating, Count: 1
-2024-10-02 00:29:17,238 - DEBUG - Nature: Shots Heard, Count: 1
-2024-10-02 00:29:17,239 - DEBUG - Nature: Sick Person, Count: 30
-2024-10-02 00:29:17,239 - DEBUG - Nature: Special Assignment, Count: 1
-2024-10-02 00:29:17,239 - DEBUG - Nature: Stand By EMS, Count: 3
-2024-10-02 00:29:17,239 - DEBUG - Nature: Stolen Vehicle, Count: 1
-2024-10-02 00:29:17,239 - DEBUG - Nature: Stroke, Count: 2
-2024-10-02 00:29:17,239 - DEBUG - Nature: Suspicious, Count: 6
-2024-10-02 00:29:17,239 - DEBUG - Nature: Test Call, Count: 11
-2024-10-02 00:29:17,241 - DEBUG - Nature: Traffic Stop, Count: 44
-2024-10-02 00:29:17,241 - DEBUG - Nature: Transfer/Interfacility, Count: 17
-2024-10-02 00:29:17,241 - DEBUG - Nature: Traumatic Injury, Count: 4
-2024-10-02 00:29:17,241 - DEBUG - Nature: Trespassing, Count: 8
-2024-10-02 00:29:17,241 - DEBUG - Nature: Unconscious/Fainting, Count: 11
-2024-10-02 00:29:17,241 - DEBUG - Nature: Unknown Problem/Man Down, Count: 2
-2024-10-02 00:29:17,242 - DEBUG - Nature: Vandalism, Count: 2
-2024-10-02 00:29:17,242 - DEBUG - Nature: Welfare Check, Count: 22
-2024-10-02 00:29:17,242 - INFO - Successfully printed status of incidents by nature
-2024-10-02 00:29:37,015 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
-2024-10-02 00:29:37,015 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
-2024-10-02 00:29:37,020 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
-2024-10-02 00:29:37,023 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
-2024-10-02 00:29:37,023 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
-2024-10-02 00:29:37,027 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
-2024-10-02 00:29:37,027 - INFO - Inserting extracted incidents into the database
-2024-10-02 00:29:37,030 - DEBUG - Successfully cleared the incidents table
-2024-10-02 00:29:37,034 - INFO - Successfully inserted incidents into the database
-2024-10-02 00:30:27,132 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
-2024-10-02 00:30:27,132 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
-2024-10-02 00:30:27,149 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
-2024-10-02 00:30:27,149 - INFO - Inserting extracted incidents into the database
-2024-10-02 00:30:27,153 - DEBUG - Successfully cleared the incidents table
-2024-10-02 00:30:27,157 - INFO - Successfully inserted incidents into the database
-2024-10-02 00:30:27,157 - INFO - Querying and printing status of incidents by nature
-2024-10-02 00:30:27,158 - DEBUG - Nature: 911 Call Nature Unknown, Count: 4
-2024-10-02 00:30:27,158 - DEBUG - Nature: Abdominal Pains/Problems, Count: 4
-2024-10-02 00:30:27,158 - DEBUG - Nature: Alarm, Count: 11
-2024-10-02 00:30:27,158 - DEBUG - Nature: Alarm Holdup/Panic, Count: 1
-2024-10-02 00:30:27,158 - DEBUG - Nature: Allergies/Envenomations, Count: 2
-2024-10-02 00:30:27,158 - DEBUG - Nature: Animal Complaint, Count: 3
-2024-10-02 00:30:27,158 - DEBUG - Nature: Animal Dead, Count: 2
-2024-10-02 00:30:27,158 - DEBUG - Nature: Animal Injured, Count: 1
-2024-10-02 00:30:27,158 - DEBUG - Nature: Animal Livestock, Count: 1
-2024-10-02 00:30:27,158 - DEBUG - Nature: Animal at Large, Count: 3
-2024-10-02 00:30:27,158 - DEBUG - Nature: Assault, Count: 1
-2024-10-02 00:30:27,158 - DEBUG - Nature: Assault EMS Needed, Count: 2
-2024-10-02 00:30:27,158 - DEBUG - Nature: Assist Police, Count: 1
-2024-10-02 00:30:27,158 - DEBUG - Nature: Back Pain, Count: 2
-2024-10-02 00:30:27,158 - DEBUG - Nature: Barking Dog, Count: 2
-2024-10-02 00:30:27,158 - DEBUG - Nature: Body Reported, Count: 1
-2024-10-02 00:30:27,158 - DEBUG - Nature: Breathing Problems, Count: 8
-2024-10-02 00:30:27,158 - DEBUG - Nature: Burglary, Count: 1
-2024-10-02 00:30:27,158 - DEBUG - Nature: COP DDACTS, Count: 1
-2024-10-02 00:30:27,158 - DEBUG - Nature: COP Problem Solving, Count: 1
-2024-10-02 00:30:27,158 - DEBUG - Nature: COP Relationships, Count: 5
-2024-10-02 00:30:27,158 - DEBUG - Nature: Cardiac Respritory Arrest, Count: 2
-2024-10-02 00:30:27,158 - DEBUG - Nature: Check Area, Count: 6
-2024-10-02 00:30:27,158 - DEBUG - Nature: Chest Pain, Count: 8
-2024-10-02 00:30:27,162 - DEBUG - Nature: Contact a Subject, Count: 23
-2024-10-02 00:30:27,162 - DEBUG - Nature: Convulsion/Seizure, Count: 6
-2024-10-02 00:30:27,162 - DEBUG - Nature: Debris in Roadway, Count: 1
-2024-10-02 00:30:27,162 - DEBUG - Nature: Diabetic Problems, Count: 2
-2024-10-02 00:30:27,162 - DEBUG - Nature: Disturbance/Domestic, Count: 19
-2024-10-02 00:30:27,162 - DEBUG - Nature: Extra Patrol, Count: 2
-2024-10-02 00:30:27,162 - DEBUG - Nature: Falls, Count: 4
-2024-10-02 00:30:27,162 - DEBUG - Nature: Fight, Count: 3
-2024-10-02 00:30:27,162 - DEBUG - Nature: Fire Alarm, Count: 3
-2024-10-02 00:30:27,163 - DEBUG - Nature: Fire Carbon Monoxide Alarm, Count: 2
-2024-10-02 00:30:27,163 - DEBUG - Nature: Fire Gas Leak, Count: 2
-2024-10-02 00:30:27,163 - DEBUG - Nature: Fire Residential, Count: 2
-2024-10-02 00:30:27,163 - DEBUG - Nature: Follow Up, Count: 4
-2024-10-02 00:30:27,163 - DEBUG - Nature: Found Item, Count: 2
-2024-10-02 00:30:27,163 - DEBUG - Nature: Fraud, Count: 4
-2024-10-02 00:30:27,163 - DEBUG - Nature: Harassment / Threats Report, Count: 4
-2024-10-02 00:30:27,163 - DEBUG - Nature: Headache, Count: 2
-2024-10-02 00:30:27,163 - DEBUG - Nature: Heart Problems/AICD, Count: 2
-2024-10-02 00:30:27,165 - DEBUG - Nature: Hemorrhage/Lacerations, Count: 6
-2024-10-02 00:30:27,165 - DEBUG - Nature: Hit and Run, Count: 3
-2024-10-02 00:30:27,165 - DEBUG - Nature: Larceny, Count: 10
-2024-10-02 00:30:27,165 - DEBUG - Nature: Loud Party, Count: 1
-2024-10-02 00:30:27,165 - DEBUG - Nature: MVA Non Injury, Count: 8
-2024-10-02 00:30:27,165 - DEBUG - Nature: MVA With Injuries, Count: 11
-2024-10-02 00:30:27,165 - DEBUG - Nature: Medical Call Pd Requested, Count: 2
-2024-10-02 00:30:27,165 - DEBUG - Nature: Missing Person, Count: 2
-2024-10-02 00:30:27,165 - DEBUG - Nature: Motorist Assist, Count: 5
-2024-10-02 00:30:27,165 - DEBUG - Nature: Mutual Aid, Count: 3
-2024-10-02 00:30:27,165 - DEBUG - Nature: Nature, Count: 1
-2024-10-02 00:30:27,165 - DEBUG - Nature: Noise Complaint, Count: 4
-2024-10-02 00:30:27,165 - DEBUG - Nature: Open Door/Premises Check, Count: 1
-2024-10-02 00:30:27,165 - DEBUG - Nature: Overdose/Poisoning, Count: 1
-2024-10-02 00:30:27,165 - DEBUG - Nature: Parking Problem, Count: 15
-2024-10-02 00:30:27,167 - DEBUG - Nature: Pick Up Partner, Count: 3
-2024-10-02 00:30:27,167 - DEBUG - Nature: Public Assist, Count: 6
-2024-10-02 00:30:27,167 - DEBUG - Nature: Reckless Driving, Count: 3
-2024-10-02 00:30:27,168 - DEBUG - Nature: Road Rage, Count: 1
-2024-10-02 00:30:27,168 - DEBUG - Nature: Runaway or Lost Child, Count: 8
-2024-10-02 00:30:27,168 - DEBUG - Nature: Shooting Stabbing Penetrating, Count: 1
-2024-10-02 00:30:27,168 - DEBUG - Nature: Shots Heard, Count: 1
-2024-10-02 00:30:27,168 - DEBUG - Nature: Sick Person, Count: 30
-2024-10-02 00:30:27,168 - DEBUG - Nature: Special Assignment, Count: 1
-2024-10-02 00:30:27,169 - DEBUG - Nature: Stand By EMS, Count: 3
-2024-10-02 00:30:27,169 - DEBUG - Nature: Stolen Vehicle, Count: 1
-2024-10-02 00:30:27,171 - DEBUG - Nature: Stroke, Count: 2
-2024-10-02 00:30:27,171 - DEBUG - Nature: Suspicious, Count: 6
-2024-10-02 00:30:27,171 - DEBUG - Nature: Test Call, Count: 11
-2024-10-02 00:30:27,171 - DEBUG - Nature: Traffic Stop, Count: 44
-2024-10-02 00:30:27,173 - DEBUG - Nature: Transfer/Interfacility, Count: 17
-2024-10-02 00:30:27,173 - DEBUG - Nature: Traumatic Injury, Count: 4
-2024-10-02 00:30:27,173 - DEBUG - Nature: Trespassing, Count: 8
-2024-10-02 00:30:27,173 - DEBUG - Nature: Unconscious/Fainting, Count: 11
-2024-10-02 00:30:27,173 - DEBUG - Nature: Unknown Problem/Man Down, Count: 2
-2024-10-02 00:30:27,174 - DEBUG - Nature: Vandalism, Count: 2
-2024-10-02 00:30:27,174 - DEBUG - Nature: Welfare Check, Count: 22
-2024-10-02 00:30:27,174 - INFO - Successfully printed status of incidents by nature
+2024-10-02 00:47:37,358 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-10-02 00:47:37,362 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-10-02 00:47:37,362 - INFO - Inserting extracted incidents into the database
+2024-10-02 00:47:37,362 - DEBUG - Successfully cleared the incidents table
+2024-10-02 00:47:37,362 - INFO - Successfully inserted incidents into the database
+2024-10-02 00:47:37,362 - INFO - Querying and printing status of incidents by nature
+2024-10-02 00:47:37,362 - DEBUG - Nature: 911 Call Nature Unknown, Count: 4
+2024-10-02 00:47:37,362 - DEBUG - Nature: Abdominal Pains/Problems, Count: 4
+2024-10-02 00:47:37,362 - DEBUG - Nature: Alarm, Count: 11
+2024-10-02 00:47:37,362 - DEBUG - Nature: Alarm Holdup/Panic, Count: 1
+2024-10-02 00:47:37,362 - DEBUG - Nature: Allergies/Envenomations, Count: 2
+2024-10-02 00:47:37,362 - DEBUG - Nature: Animal Complaint, Count: 3
+2024-10-02 00:47:37,362 - DEBUG - Nature: Animal Dead, Count: 2
+2024-10-02 00:47:37,362 - DEBUG - Nature: Animal Injured, Count: 1
+2024-10-02 00:47:37,362 - DEBUG - Nature: Animal Livestock, Count: 1
+2024-10-02 00:47:37,362 - DEBUG - Nature: Animal at Large, Count: 3
+2024-10-02 00:47:37,362 - DEBUG - Nature: Assault, Count: 1
+2024-10-02 00:47:37,362 - DEBUG - Nature: Assault EMS Needed, Count: 2
+2024-10-02 00:47:37,362 - DEBUG - Nature: Assist Police, Count: 1
+2024-10-02 00:47:37,362 - DEBUG - Nature: Back Pain, Count: 2
+2024-10-02 00:47:37,375 - DEBUG - Nature: Barking Dog, Count: 2
+2024-10-02 00:47:37,375 - DEBUG - Nature: Body Reported, Count: 1
+2024-10-02 00:47:37,375 - DEBUG - Nature: Breathing Problems, Count: 8
+2024-10-02 00:47:37,375 - DEBUG - Nature: Burglary, Count: 1
+2024-10-02 00:47:37,375 - DEBUG - Nature: COP DDACTS, Count: 1
+2024-10-02 00:47:37,375 - DEBUG - Nature: COP Problem Solving, Count: 1
+2024-10-02 00:47:37,375 - DEBUG - Nature: COP Relationships, Count: 5
+2024-10-02 00:47:37,375 - DEBUG - Nature: Cardiac Respritory Arrest, Count: 2
+2024-10-02 00:47:37,375 - DEBUG - Nature: Check Area, Count: 6
+2024-10-02 00:47:37,375 - DEBUG - Nature: Chest Pain, Count: 8
+2024-10-02 00:47:37,375 - DEBUG - Nature: Contact a Subject, Count: 23
+2024-10-02 00:47:37,375 - DEBUG - Nature: Convulsion/Seizure, Count: 6
+2024-10-02 00:47:37,375 - DEBUG - Nature: Debris in Roadway, Count: 1
+2024-10-02 00:47:37,375 - DEBUG - Nature: Diabetic Problems, Count: 2
+2024-10-02 00:47:37,375 - DEBUG - Nature: Disturbance/Domestic, Count: 19
+2024-10-02 00:47:37,375 - DEBUG - Nature: Extra Patrol, Count: 2
+2024-10-02 00:47:37,375 - DEBUG - Nature: Falls, Count: 4
+2024-10-02 00:47:37,375 - DEBUG - Nature: Fight, Count: 3
+2024-10-02 00:47:37,384 - DEBUG - Nature: Fire Alarm, Count: 3
+2024-10-02 00:47:37,384 - DEBUG - Nature: Fire Carbon Monoxide Alarm, Count: 2
+2024-10-02 00:47:37,386 - DEBUG - Nature: Fire Gas Leak, Count: 2
+2024-10-02 00:47:37,386 - DEBUG - Nature: Fire Residential, Count: 2
+2024-10-02 00:47:37,387 - DEBUG - Nature: Follow Up, Count: 4
+2024-10-02 00:47:37,387 - DEBUG - Nature: Found Item, Count: 2
+2024-10-02 00:47:37,387 - DEBUG - Nature: Fraud, Count: 4
+2024-10-02 00:47:37,387 - DEBUG - Nature: Harassment / Threats Report, Count: 4
+2024-10-02 00:47:37,387 - DEBUG - Nature: Headache, Count: 2
+2024-10-02 00:47:37,387 - DEBUG - Nature: Heart Problems/AICD, Count: 2
+2024-10-02 00:47:37,387 - DEBUG - Nature: Hemorrhage/Lacerations, Count: 6
+2024-10-02 00:47:37,389 - DEBUG - Nature: Hit and Run, Count: 3
+2024-10-02 00:47:37,389 - DEBUG - Nature: Larceny, Count: 10
+2024-10-02 00:47:37,389 - DEBUG - Nature: Loud Party, Count: 1
+2024-10-02 00:47:37,391 - DEBUG - Nature: MVA Non Injury, Count: 8
+2024-10-02 00:47:37,391 - DEBUG - Nature: MVA With Injuries, Count: 11
+2024-10-02 00:47:37,391 - DEBUG - Nature: Medical Call Pd Requested, Count: 2
+2024-10-02 00:47:37,391 - DEBUG - Nature: Missing Person, Count: 2
+2024-10-02 00:47:37,391 - DEBUG - Nature: Motorist Assist, Count: 5
+2024-10-02 00:47:37,391 - DEBUG - Nature: Mutual Aid, Count: 3
+2024-10-02 00:47:37,391 - DEBUG - Nature: Nature, Count: 1
+2024-10-02 00:47:37,391 - DEBUG - Nature: Noise Complaint, Count: 4
+2024-10-02 00:47:37,391 - DEBUG - Nature: Open Door/Premises Check, Count: 1
+2024-10-02 00:47:37,393 - DEBUG - Nature: Overdose/Poisoning, Count: 1
+2024-10-02 00:47:37,393 - DEBUG - Nature: Parking Problem, Count: 15
+2024-10-02 00:47:37,394 - DEBUG - Nature: Pick Up Partner, Count: 3
+2024-10-02 00:47:37,394 - DEBUG - Nature: Public Assist, Count: 6
+2024-10-02 00:47:37,394 - DEBUG - Nature: Reckless Driving, Count: 3
+2024-10-02 00:47:37,394 - DEBUG - Nature: Road Rage, Count: 1
+2024-10-02 00:47:37,394 - DEBUG - Nature: Runaway or Lost Child, Count: 8
+2024-10-02 00:47:37,394 - DEBUG - Nature: Shooting Stabbing Penetrating, Count: 1
+2024-10-02 00:47:37,395 - DEBUG - Nature: Shots Heard, Count: 1
+2024-10-02 00:47:37,395 - DEBUG - Nature: Sick Person, Count: 30
+2024-10-02 00:47:37,395 - DEBUG - Nature: Special Assignment, Count: 1
+2024-10-02 00:47:37,396 - DEBUG - Nature: Stand By EMS, Count: 3
+2024-10-02 00:47:37,396 - DEBUG - Nature: Stolen Vehicle, Count: 1
+2024-10-02 00:47:37,396 - DEBUG - Nature: Stroke, Count: 2
+2024-10-02 00:47:37,396 - DEBUG - Nature: Suspicious, Count: 6
+2024-10-02 00:47:37,396 - DEBUG - Nature: Test Call, Count: 11
+2024-10-02 00:47:37,396 - DEBUG - Nature: Traffic Stop, Count: 44
+2024-10-02 00:47:37,397 - DEBUG - Nature: Transfer/Interfacility, Count: 17
+2024-10-02 00:47:37,397 - DEBUG - Nature: Traumatic Injury, Count: 4
+2024-10-02 00:47:37,397 - DEBUG - Nature: Trespassing, Count: 8
+2024-10-02 00:47:37,397 - DEBUG - Nature: Unconscious/Fainting, Count: 11
+2024-10-02 00:47:37,398 - DEBUG - Nature: Unknown Problem/Man Down, Count: 2
+2024-10-02 00:47:37,398 - DEBUG - Nature: Vandalism, Count: 2
+2024-10-02 00:47:37,399 - DEBUG - Nature: Welfare Check, Count: 22
+2024-10-02 00:47:37,399 - INFO - Successfully printed status of incidents by nature
+2024-10-02 00:47:46,389 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-10-02 00:47:46,389 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-10-02 00:47:46,392 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-10-02 00:47:46,398 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-10-02 00:47:46,398 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-10-02 00:47:46,402 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-10-02 00:47:46,403 - INFO - Inserting extracted incidents into the database
+2024-10-02 00:47:46,407 - DEBUG - Successfully cleared the incidents table
+2024-10-02 00:47:46,409 - INFO - Successfully inserted incidents into the database
+2024-10-02 00:48:02,205 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-10-02 00:48:02,205 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-10-02 00:48:02,218 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-10-02 00:48:02,218 - INFO - Inserting extracted incidents into the database
+2024-10-02 00:48:02,221 - DEBUG - Successfully cleared the incidents table
+2024-10-02 00:48:02,225 - INFO - Successfully inserted incidents into the database
+2024-10-02 00:48:02,225 - INFO - Querying and printing status of incidents by nature
+2024-10-02 00:48:02,225 - DEBUG - Nature: 911 Call Nature Unknown, Count: 4
+2024-10-02 00:48:02,225 - DEBUG - Nature: Abdominal Pains/Problems, Count: 4
+2024-10-02 00:48:02,227 - DEBUG - Nature: Alarm, Count: 11
+2024-10-02 00:48:02,227 - DEBUG - Nature: Alarm Holdup/Panic, Count: 1
+2024-10-02 00:48:02,227 - DEBUG - Nature: Allergies/Envenomations, Count: 2
+2024-10-02 00:48:02,227 - DEBUG - Nature: Animal Complaint, Count: 3
+2024-10-02 00:48:02,227 - DEBUG - Nature: Animal Dead, Count: 2
+2024-10-02 00:48:02,227 - DEBUG - Nature: Animal Injured, Count: 1
+2024-10-02 00:48:02,228 - DEBUG - Nature: Animal Livestock, Count: 1
+2024-10-02 00:48:02,228 - DEBUG - Nature: Animal at Large, Count: 3
+2024-10-02 00:48:02,228 - DEBUG - Nature: Assault, Count: 1
+2024-10-02 00:48:02,228 - DEBUG - Nature: Assault EMS Needed, Count: 2
+2024-10-02 00:48:02,228 - DEBUG - Nature: Assist Police, Count: 1
+2024-10-02 00:48:02,228 - DEBUG - Nature: Back Pain, Count: 2
+2024-10-02 00:48:02,229 - DEBUG - Nature: Barking Dog, Count: 2
+2024-10-02 00:48:02,229 - DEBUG - Nature: Body Reported, Count: 1
+2024-10-02 00:48:02,229 - DEBUG - Nature: Breathing Problems, Count: 8
+2024-10-02 00:48:02,229 - DEBUG - Nature: Burglary, Count: 1
+2024-10-02 00:48:02,229 - DEBUG - Nature: COP DDACTS, Count: 1
+2024-10-02 00:48:02,229 - DEBUG - Nature: COP Problem Solving, Count: 1
+2024-10-02 00:48:02,229 - DEBUG - Nature: COP Relationships, Count: 5
+2024-10-02 00:48:02,229 - DEBUG - Nature: Cardiac Respritory Arrest, Count: 2
+2024-10-02 00:48:02,230 - DEBUG - Nature: Check Area, Count: 6
+2024-10-02 00:48:02,230 - DEBUG - Nature: Chest Pain, Count: 8
+2024-10-02 00:48:02,230 - DEBUG - Nature: Contact a Subject, Count: 23
+2024-10-02 00:48:02,230 - DEBUG - Nature: Convulsion/Seizure, Count: 6
+2024-10-02 00:48:02,230 - DEBUG - Nature: Debris in Roadway, Count: 1
+2024-10-02 00:48:02,230 - DEBUG - Nature: Diabetic Problems, Count: 2
+2024-10-02 00:48:02,232 - DEBUG - Nature: Disturbance/Domestic, Count: 19
+2024-10-02 00:48:02,232 - DEBUG - Nature: Extra Patrol, Count: 2
+2024-10-02 00:48:02,233 - DEBUG - Nature: Falls, Count: 4
+2024-10-02 00:48:02,233 - DEBUG - Nature: Fight, Count: 3
+2024-10-02 00:48:02,233 - DEBUG - Nature: Fire Alarm, Count: 3
+2024-10-02 00:48:02,233 - DEBUG - Nature: Fire Carbon Monoxide Alarm, Count: 2
+2024-10-02 00:48:02,233 - DEBUG - Nature: Fire Gas Leak, Count: 2
+2024-10-02 00:48:02,233 - DEBUG - Nature: Fire Residential, Count: 2
+2024-10-02 00:48:02,235 - DEBUG - Nature: Follow Up, Count: 4
+2024-10-02 00:48:02,235 - DEBUG - Nature: Found Item, Count: 2
+2024-10-02 00:48:02,235 - DEBUG - Nature: Fraud, Count: 4
+2024-10-02 00:48:02,235 - DEBUG - Nature: Harassment / Threats Report, Count: 4
+2024-10-02 00:48:02,235 - DEBUG - Nature: Headache, Count: 2
+2024-10-02 00:48:02,235 - DEBUG - Nature: Heart Problems/AICD, Count: 2
+2024-10-02 00:48:02,235 - DEBUG - Nature: Hemorrhage/Lacerations, Count: 6
+2024-10-02 00:48:02,235 - DEBUG - Nature: Hit and Run, Count: 3
+2024-10-02 00:48:02,235 - DEBUG - Nature: Larceny, Count: 10
+2024-10-02 00:48:02,235 - DEBUG - Nature: Loud Party, Count: 1
+2024-10-02 00:48:02,237 - DEBUG - Nature: MVA Non Injury, Count: 8
+2024-10-02 00:48:02,237 - DEBUG - Nature: MVA With Injuries, Count: 11
+2024-10-02 00:48:02,237 - DEBUG - Nature: Medical Call Pd Requested, Count: 2
+2024-10-02 00:48:02,237 - DEBUG - Nature: Missing Person, Count: 2
+2024-10-02 00:48:02,238 - DEBUG - Nature: Motorist Assist, Count: 5
+2024-10-02 00:48:02,238 - DEBUG - Nature: Mutual Aid, Count: 3
+2024-10-02 00:48:02,238 - DEBUG - Nature: Nature, Count: 1
+2024-10-02 00:48:02,238 - DEBUG - Nature: Noise Complaint, Count: 4
+2024-10-02 00:48:02,239 - DEBUG - Nature: Open Door/Premises Check, Count: 1
+2024-10-02 00:48:02,239 - DEBUG - Nature: Overdose/Poisoning, Count: 1
+2024-10-02 00:48:02,239 - DEBUG - Nature: Parking Problem, Count: 15
+2024-10-02 00:48:02,239 - DEBUG - Nature: Pick Up Partner, Count: 3
+2024-10-02 00:48:02,239 - DEBUG - Nature: Public Assist, Count: 6
+2024-10-02 00:48:02,239 - DEBUG - Nature: Reckless Driving, Count: 3
+2024-10-02 00:48:02,239 - DEBUG - Nature: Road Rage, Count: 1
+2024-10-02 00:48:02,240 - DEBUG - Nature: Runaway or Lost Child, Count: 8
+2024-10-02 00:48:02,240 - DEBUG - Nature: Shooting Stabbing Penetrating, Count: 1
+2024-10-02 00:48:02,240 - DEBUG - Nature: Shots Heard, Count: 1
+2024-10-02 00:48:02,240 - DEBUG - Nature: Sick Person, Count: 30
+2024-10-02 00:48:02,241 - DEBUG - Nature: Special Assignment, Count: 1
+2024-10-02 00:48:02,241 - DEBUG - Nature: Stand By EMS, Count: 3
+2024-10-02 00:48:02,241 - DEBUG - Nature: Stolen Vehicle, Count: 1
+2024-10-02 00:48:02,241 - DEBUG - Nature: Stroke, Count: 2
+2024-10-02 00:48:02,242 - DEBUG - Nature: Suspicious, Count: 6
+2024-10-02 00:48:02,242 - DEBUG - Nature: Test Call, Count: 11
+2024-10-02 00:48:02,242 - DEBUG - Nature: Traffic Stop, Count: 44
+2024-10-02 00:48:02,242 - DEBUG - Nature: Transfer/Interfacility, Count: 17
+2024-10-02 00:48:02,242 - DEBUG - Nature: Traumatic Injury, Count: 4
+2024-10-02 00:48:02,242 - DEBUG - Nature: Trespassing, Count: 8
+2024-10-02 00:48:02,242 - DEBUG - Nature: Unconscious/Fainting, Count: 11
+2024-10-02 00:48:02,242 - DEBUG - Nature: Unknown Problem/Man Down, Count: 2
+2024-10-02 00:48:02,242 - DEBUG - Nature: Vandalism, Count: 2
+2024-10-02 00:48:02,242 - DEBUG - Nature: Welfare Check, Count: 22
+2024-10-02 00:48:02,242 - INFO - Successfully printed status of incidents by nature

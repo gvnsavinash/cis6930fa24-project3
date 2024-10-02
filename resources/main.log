@@ -1,18 +1,18 @@
-2024-10-02 00:29:15,055 - INFO - Starting the script
-2024-10-02 00:29:15,056 - INFO - Received incidents URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
-2024-10-02 00:29:15,056 - INFO - Starting main function
-2024-10-02 00:29:15,056 - INFO - Fetching incidents from URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
-2024-10-02 00:29:16,347 - INFO - Extracting incidents from PDF
-2024-10-02 00:29:17,207 - INFO - Creating new SQLite database
-2024-10-02 00:29:17,221 - INFO - Inserting 420 incidents into the database
-2024-10-02 00:29:17,227 - INFO - Printing incident counts by nature
-2024-10-02 00:29:17,242 - INFO - Main function completed successfully
-2024-10-02 00:30:25,244 - INFO - Starting the script
-2024-10-02 00:30:25,253 - INFO - Received incidents URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
-2024-10-02 00:30:25,253 - INFO - Starting main function
-2024-10-02 00:30:25,253 - INFO - Fetching incidents from URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
-2024-10-02 00:30:26,468 - INFO - Extracting incidents from PDF
-2024-10-02 00:30:27,132 - INFO - Creating new SQLite database
-2024-10-02 00:30:27,149 - INFO - Inserting 420 incidents into the database
-2024-10-02 00:30:27,157 - INFO - Printing incident counts by nature
-2024-10-02 00:30:27,174 - INFO - Main function completed successfully
+2024-10-02 00:47:34,566 - INFO - Starting the script
+2024-10-02 00:47:34,566 - INFO - Received incidents URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
+2024-10-02 00:47:34,566 - INFO - Starting main function
+2024-10-02 00:47:34,566 - INFO - Fetching incidents from URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
+2024-10-02 00:47:36,616 - INFO - Extracting incidents from PDF
+2024-10-02 00:47:37,358 - INFO - Creating new SQLite database
+2024-10-02 00:47:37,362 - INFO - Inserting 420 incidents into the database
+2024-10-02 00:47:37,362 - INFO - Printing incident counts by nature
+2024-10-02 00:47:37,399 - INFO - Main function completed successfully
+2024-10-02 00:48:00,205 - INFO - Starting the script
+2024-10-02 00:48:00,205 - INFO - Received incidents URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
+2024-10-02 00:48:00,205 - INFO - Starting main function
+2024-10-02 00:48:00,205 - INFO - Fetching incidents from URL: https://www.normanok.gov/sites/default/files/documents/2024-09/2024-09-12_daily_incident_summary.pdf
+2024-10-02 00:48:01,566 - INFO - Extracting incidents from PDF
+2024-10-02 00:48:02,205 - INFO - Creating new SQLite database
+2024-10-02 00:48:02,218 - INFO - Inserting 420 incidents into the database
+2024-10-02 00:48:02,225 - INFO - Printing incident counts by nature
+2024-10-02 00:48:02,244 - INFO - Main function completed successfully

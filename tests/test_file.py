@@ -46,17 +46,34 @@ def test_databaseinsertion():
 
 def test_download_pdf():
     """
-    Test the download of a PDF file from a given URL.
-
+    Test the download of a PDF file from a given URL and save it locally.
+    
     This function verifies that the `fetchincidents` method from the `project0` module
-    successfully retrieves a PDF stream from the specified URL.
-
+    successfully retrieves a PDF as a bytes object from the specified URL and saves it to a local file.
+    
     Asserts:
-        The PDF stream is not None.
+        - The PDF byte stream is not None.
+        - The PDF is saved locally.
     """
     url = "https://www.normanok.gov/sites/default/files/documents/2024-08/2024-08-02_daily_incident_summary.pdf"
+    local_pdf = "test_incident_summary.pdf"  # Local filename to save the PDF
+    
+    # Download the PDF from the URL
     byte_pdf = project0.fetchincidents(url)
+    
+    # Ensure the download was successful
     assert byte_pdf is not None
+    
+    # Save the PDF byte content directly to a local file
+    with open(local_pdf, 'wb') as f:
+        f.write(byte_pdf)
+
+    # Verify that the file was saved locally or not 
+    assert os.path.exists(local_pdf)
+
+    # Cleanup: remove the downloaded file after test
+    if os.path.exists(local_pdf):
+        os.remove(local_pdf)
 
 def test_extract_incidents_from_pdf():
     """
@@ -90,3 +107,7 @@ def test_column_seperator():
     line = "8/2/2024 0:10   2024-00055701  2954 OAK TREE AVE  Traffic Stop  OK0140200"
     result = project0.column_seperator(line)
     assert result == ("8/2/2024 0:10", "2024-00055701", "2954 OAK TREE AVE", "Traffic Stop", "OK0140200")
+
+
+
+
