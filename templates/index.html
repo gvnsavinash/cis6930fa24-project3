@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Incident PDFs</title>
+    <style>
+        /* General styling for body and layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            background-image: url('https://www.w3schools.com/w3images/forest.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-family: 'Arial', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        /* Stylish Buttons */
+        button,
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover,
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        /* URL Field Container */
+        .url-container {
+            margin-bottom: 20px;
+        }
+
+        .url-container input {
+            margin-bottom: 10px;
+        }
+
+        #additionalUrls {
+            margin-top: 10px;
+        }
+
+        .form-footer {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #777;
+        }
+
+        /* Left Information Box */
+        .left-info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(248, 249, 250, 0.8);
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+            width: 250px;
+        }
+
+        .left-info h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #007BFF;
+        }
+
+        /* Image Styling */
+        .img-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-info">
+        <h3>Data Engineering Project 3</h3>
+        <p>Designed and worked by: <strong>Avinash Gudipudi</strong></p>
+        <p>UFID: <strong>43775641</strong></p>
+    </div>
+
+    <div class="container">
+        <h1>Upload NormanPD Incident PDFs</h1>
+
+        <!-- Image Section -->
+        <div class="img-container">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Nature Image">
+        </div>
+
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="url-container">
+                <label for="url">URLs:</label>
+                <input type="text" name="urls" placeholder="Enter URL of the PDF" >
+                <button type="button" onclick="addUrlField()">Add More URLs</button>
+                <div id="additionalUrls"></div>
+            </div>
+
+            <div class="file-container">
+                <label for="file">Files (Single or Multiple) :</label>
+                <input type="file" name="files" multiple><br><br>
+            </div>
+
+            <input type="submit" value="Upload and Analyze">
+        </form>
+
+        <div class="form-footer">
+            <p>By uploading, you agree to our terms and conditions.</p>
+        </div>
+    </div>
+
+    <script>
+        function addUrlField() {
+            let newField = document.createElement("input");
+            newField.setAttribute("type", "text");
+            newField.setAttribute("name", "urls");
+            newField.setAttribute("placeholder", "Enter another URL of the PDF");
+            document.getElementById("additionalUrls").appendChild(newField);
+            document.getElementById("additionalUrls").appendChild(document.createElement("br"));
+        }
+    </script>
+</body>
+
+</html>

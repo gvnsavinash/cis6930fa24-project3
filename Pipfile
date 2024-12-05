@@ -5,8 +5,18 @@ name = "pypi"
 
 [packages]
 requests = "*"
-pypdf = "*"
 pytest = "*"
+matplotlib = "*"
+pandas = "*"
+scikit-learn = "*"
+pypdf = "*"
+python-multipart = "*"
+jinja2 = "*"
+seaborn = "*"
+flask = "*"
+werkzeug = "*"
+pypdf2 = "*"
+plotly = "*"
 
 [dev-packages]
 

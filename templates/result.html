@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results of Data Analysis</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        h2 {
+            color: #007BFF;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        a {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Results of Data Analysis</h1>
+    <h2>Cluster Scatter Plot</h2>
+    <img src="{{ url_for('static', filename='scatter_plot.png') }}" alt="Scatter Plot">
+    <h2>Bar Graph of Incidents</h2>
+    <img src="{{ url_for('static', filename='bar_plot.png') }}" alt="Bar Graph">
+    <h2>Pie Chart of Clusters</h2>
+    <img src="{{ url_for('static', filename='pie_chart.png') }}" alt="Pie Chart">
+    <a href="/">Upload Another File</a>
+</body>
+
+</html>
