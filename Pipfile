@@ -17,6 +17,7 @@ flask = "*"
 werkzeug = "*"
 pypdf2 = "*"
 plotly = "*"
+numpy = "*"
 
 [dev-packages]
 

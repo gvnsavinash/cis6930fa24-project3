@@ -2,6 +2,7 @@ import urllib.request
 import pypdf
 from io import BytesIO
 import re
+import tempfile
 
 from logger import setup_logger, log_message
 
@@ -11,34 +12,21 @@ from logger import setup_logger, log_message
 # Download the PDF file
 def fetchincidents(url):
     """
-    Fetches a PDF document from the specified URL.
-
-    This function sends an HTTP GET request to the given URL with a custom
-    User-Agent header to download a PDF file. It logs the download process
-    and handles any exceptions that may occur.
-
-    Args:
-        url (str): The URL of the PDF document to be downloaded.
-
-    Returns:
-        bytes: The binary content of the downloaded PDF file.
-
-    Raises:
-        Exception: If there is an error during the download process.
+    Fetches a PDF document from the specified URL and saves it to a temporary file.
     """
-    #log_message(logger, 'info', f"Download PDF from URL: {url}")
-    try:
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36'
-        }
-        request = urllib.request.Request(url, headers=headers)
-        response = urllib.request.urlopen(request)
-        data = response.read()
-        #log_message(logger, 'info', f"Successfully downloaded PDF from {url}")
-        return data
-    except Exception as e:
-        #log_message(logger, 'error', f"Failed to download PDF from {url}: {e}")
-        raise
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36'
+    }
+    request = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(request) as response:
+        if response.status == 200:
+            # Create a temporary file
+            temp_pdf = tempfile.NamedTemporaryFile(delete=False, suffix='.pdf')
+            with open(temp_pdf.name, 'wb') as f:
+                f.write(response.read())
+            return temp_pdf.name
+        else:
+            response.raise_for_status()
 
 # Extract incidents
 def extractincidents(incident_data):
