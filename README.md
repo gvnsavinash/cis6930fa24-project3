@@ -1,11 +1,17 @@
 Name: Venkata Naga Satya Avinash
 UFID: 4377-5641
 
-## Project Description
+## Assignment Description
+In this assignment, you are tasked with creating an interactive web interface that visualizes data collected from the Norman Police Department’s website. The goal is to process and visualize incident data that has been gathered in Project 0 using PDFs. This project will showcase your ability to handle data, generate visualizations, and implement web technologies to create a user-friendly interface.
 
-This project involves extracting data from online PDFs provided by the Norman Police Department, reformatting the data, and storing it in an SQLite database. The goal is to build a Python script that can download incident reports, extract specific fields such as incident time, number, location, nature, and ORI, store them in a structured database, and generate summary reports showing the frequency of each incident nature.
-
-The project utilizes Python3, regular expressions, SQL, and Linux command line tools to achieve this. The primary tasks are downloading the incident PDF, extracting data, and inserting it into an SQLite database, followed by generating a report that shows the number of times each nature of incident appears.
+## Assignment Objective:
+Develop a web interface to accept one or more NormanPD-style incident PDFs via URL or file upload.
+Create three visualizations for the data you receive:
+Clustering of Records: Visualize the grouping of incidents based on certain features.
+Bar Graph: Compare the frequency of incidents.
+Additional Visualization: Choose another visualization type, such as a pie chart, bubble chart, or heat map, to enhance the data presentation.
+Provide a narrated video showcasing the functionality of the website.
+Submit the code, video, and all associated files in a structured format.
 
 ## How to Install
 

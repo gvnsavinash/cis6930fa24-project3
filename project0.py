@@ -4,7 +4,6 @@ from io import BytesIO
 import re
 import tempfile
 
-from logger import setup_logger, log_message
 
 # Logger  for project0.py
 #logger = setup_logger("project0.log")  # This will save the log in the resources folder
