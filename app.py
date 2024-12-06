@@ -14,6 +14,7 @@ from io import BytesIO
 
 # Configure Matplotlib to use the 'Agg' backend, suitable for non-interactive environments
 import matplotlib
+from sklearn.decomposition import PCA
 matplotlib.use('Agg')
 
 app = Flask(__name__)
@@ -35,23 +36,58 @@ def cluster_and_visualize(date_list, incident_number_list, location_list, nature
         'Incident ORI': ori_list
     })
 
+    print("dataframe shape", df.shape)
+
     # Label Encoding
-    le = LabelEncoder()
-    df['Nature Encoded'] = le.fit_transform(df['Nature'])
+    nature_le = LabelEncoder()
+    df['Nature_Encoded'] = nature_le.fit_transform(df['Nature'])
+
+    #label encoding
+    location_le = LabelEncoder()
+    df['Location_Encoded'] = location_le.fit_transform(df['Location'])
+
+    # dates
+    df['Date_time_quarters_encoded'] = df['Date / Time'].apply(lambda x: 'Morning' if 5 <= pd.to_datetime(x).hour < 12 else 'Afternoon' if 12 <= pd.to_datetime(x).hour < 17 else 'Evening' if 17 <= pd.to_datetime(x).hour < 21 else 'Night')
+
+    # Date Encoding
+    date_le = LabelEncoder()
+    df['Date_time_quarters_encoded'] = date_le.fit_transform(df['Date_time_quarters_encoded'])
+
+    # Incident Number Encoding
+    incident_le = LabelEncoder()
+    df['Incident_Number_Encoded'] = incident_le.fit_transform(df['Incident Number'])
 
     # K-Means Clustering
-    kmeans = KMeans(n_clusters=3, random_state=42)
-    df['Cluster'] = kmeans.fit_predict(df[['Nature Encoded']])
+    kmeans = KMeans(n_clusters=4, random_state=42)
+    df['Cluster'] = kmeans.fit_predict(df[['Nature_Encoded', 'Location_Encoded', 'Date_time_quarters_encoded', 'Incident_Number_Encoded']])
 
-    # Scatter Plot
+    # PCA for dimensionality reduction
+
+    pca = PCA(n_components=2)
+    pca_components = pca.fit_transform(df[['Nature_Encoded', 'Location_Encoded', 'Date_time_quarters_encoded', 'Incident_Number_Encoded']])
+    df['PCA1'] = pca_components[:, 0]
+    df['PCA2'] = pca_components[:, 1]
+
+    # Scatter Plot with PCA components
     plt.figure(figsize=(10, 6))
-    plt.scatter(df['Incident Number'], df['Nature Encoded'], c=df['Cluster'], cmap='viridis')
-    plt.title('Incident Clusters')
-    plt.xlabel('Incident Number')
-    plt.ylabel('Nature Encoded')
-    scatter_path = os.path.join(app.config['STATIC_FOLDER'], 'scatter_plot.png')
-    plt.savefig(scatter_path)
+    plt.scatter(df['PCA1'], df['PCA2'], c=df['Cluster'], cmap='viridis')
+    plt.title('Incident Clusters (PCA)')
+    plt.xlabel('PCA Component 1')
+    plt.ylabel('PCA Component 2')
+    pca_scatter_path = os.path.join(app.config['STATIC_FOLDER'], 'pca_scatter_plot.png')
+    plt.savefig(pca_scatter_path)
     plt.close()
+    
+
+    # # Scatter Plot
+    # plt.figure(figsize=(10, 6))
+    # plt.scatter(df['Nature_Encoded'], df['Incident_Number_Encoded'], c=df['Cluster'], cmap='viridis')
+    # plt.title('Incident Clusters')
+    # plt.xlabel('Nature_Encoded')
+    # plt.ylabel('Location_Encoded')
+    # scatter_path = os.path.join(app.config['STATIC_FOLDER'], 'scatter_plot.png')
+    # plt.savefig(scatter_path)
+    # plt.close()
 
     # Bar Plot
     plt.figure(figsize=(10, 6))
