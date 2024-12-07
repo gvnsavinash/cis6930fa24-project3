@@ -74,7 +74,7 @@ To execute the project, navigate to the project directory and run the following 
 
 2. For Test Cases 
 
-        pipenv run python -m pytest tests/test.py
+        pipenv run python -m pytest
 
 
 ## Video 
