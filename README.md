@@ -6,7 +6,7 @@ Name: Venkata Naga Satya Avinash Gudipudi
 
 # The Unredactor - Incident Data Analysis Tool
 
-The Unredactor is a streamlined web-based tool designed for the automated analysis and visualization of incident data from PDF documents. Targeted at law enforcement, researchers, and data analysts, the application simplifies the process of extracting and interpreting complex data through a user-friendly interface.
+Develop an interactive web interface to visualize data from Norman Police Department incident PDFs. The interface should allow users to upload files via URL or direct upload and display three visualizations: clustering of records, a bar graph comparison, and a custom visualization.
 
 # Key Features
 
@@ -159,17 +159,19 @@ Purpose: Configures and runs the Flask application. Description: This block chec
 
 ## project0.py
 
-fetchincidents(url):
+1. fetchincidents(url):
 
 Downloads the PDF file from the specified URL.
 Parameters: url (string): URL of the PDF file.
 Returns: Byte stream of the downloaded PDF.
-extractincidents(byte_pdf):
+
+2. extractincidents(byte_pdf):
 
 Extracts the relevant incident details (Date/Time, Incident Number, Location, Nature, and ORI) from the PDF byte stream.
 Parameters: byte_pdf: Byte stream of the PDF.
 Returns: Five lists containing the respective fields.
-column_seperator(line):
+
+3. column_seperator(line):
 
 Splits a line of text from the PDF into its components: Date/Time, Incident Number, Location, Nature, and ORI.
 Parameters: line: The string line from the PDF.
@@ -282,10 +284,15 @@ Ensures proper cleanup by removing the downloaded file after the test, maintaini
 - Assumes downloaded PDFs are not corrupt and are readable, which could disrupt processing if incorrect.
 - Incorporate file integrity checks before processing to catch and handle corrupt files.
 
-4. File Handling Bug:
+4. Responsive Design:
+
+- The UI may not display properly on various devices, leading to inconsistent user experiences.
+- Implement comprehensive CSS and layout strategies that adapt fluidly to different screen sizes.
+
+5. File Handling Bug:
 - Issues in managing temporary files could lead to incorrect file paths or missing files during operations.
 - Ensure systematic file management including proper cleanup post-use to prevent residue or path errors.
 
-5. Error Handling Insufficiency:
+6. Error Handling Insufficiency:
 - Current error handling for network and file operations is inadequate, potentially leading to crashes.
 - Strengthen error handling to ensure the application remains stable and responsive under various error conditions.
