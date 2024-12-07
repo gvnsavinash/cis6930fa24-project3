@@ -1,182 +1,550 @@
-2024-10-02 00:47:37,358 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
-2024-10-02 00:47:37,362 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
-2024-10-02 00:47:37,362 - INFO - Inserting extracted incidents into the database
-2024-10-02 00:47:37,362 - DEBUG - Successfully cleared the incidents table
-2024-10-02 00:47:37,362 - INFO - Successfully inserted incidents into the database
-2024-10-02 00:47:37,362 - INFO - Querying and printing status of incidents by nature
-2024-10-02 00:47:37,362 - DEBUG - Nature: 911 Call Nature Unknown, Count: 4
-2024-10-02 00:47:37,362 - DEBUG - Nature: Abdominal Pains/Problems, Count: 4
-2024-10-02 00:47:37,362 - DEBUG - Nature: Alarm, Count: 11
-2024-10-02 00:47:37,362 - DEBUG - Nature: Alarm Holdup/Panic, Count: 1
-2024-10-02 00:47:37,362 - DEBUG - Nature: Allergies/Envenomations, Count: 2
-2024-10-02 00:47:37,362 - DEBUG - Nature: Animal Complaint, Count: 3
-2024-10-02 00:47:37,362 - DEBUG - Nature: Animal Dead, Count: 2
-2024-10-02 00:47:37,362 - DEBUG - Nature: Animal Injured, Count: 1
-2024-10-02 00:47:37,362 - DEBUG - Nature: Animal Livestock, Count: 1
-2024-10-02 00:47:37,362 - DEBUG - Nature: Animal at Large, Count: 3
-2024-10-02 00:47:37,362 - DEBUG - Nature: Assault, Count: 1
-2024-10-02 00:47:37,362 - DEBUG - Nature: Assault EMS Needed, Count: 2
-2024-10-02 00:47:37,362 - DEBUG - Nature: Assist Police, Count: 1
-2024-10-02 00:47:37,362 - DEBUG - Nature: Back Pain, Count: 2
-2024-10-02 00:47:37,375 - DEBUG - Nature: Barking Dog, Count: 2
-2024-10-02 00:47:37,375 - DEBUG - Nature: Body Reported, Count: 1
-2024-10-02 00:47:37,375 - DEBUG - Nature: Breathing Problems, Count: 8
-2024-10-02 00:47:37,375 - DEBUG - Nature: Burglary, Count: 1
-2024-10-02 00:47:37,375 - DEBUG - Nature: COP DDACTS, Count: 1
-2024-10-02 00:47:37,375 - DEBUG - Nature: COP Problem Solving, Count: 1
-2024-10-02 00:47:37,375 - DEBUG - Nature: COP Relationships, Count: 5
-2024-10-02 00:47:37,375 - DEBUG - Nature: Cardiac Respritory Arrest, Count: 2
-2024-10-02 00:47:37,375 - DEBUG - Nature: Check Area, Count: 6
-2024-10-02 00:47:37,375 - DEBUG - Nature: Chest Pain, Count: 8
-2024-10-02 00:47:37,375 - DEBUG - Nature: Contact a Subject, Count: 23
-2024-10-02 00:47:37,375 - DEBUG - Nature: Convulsion/Seizure, Count: 6
-2024-10-02 00:47:37,375 - DEBUG - Nature: Debris in Roadway, Count: 1
-2024-10-02 00:47:37,375 - DEBUG - Nature: Diabetic Problems, Count: 2
-2024-10-02 00:47:37,375 - DEBUG - Nature: Disturbance/Domestic, Count: 19
-2024-10-02 00:47:37,375 - DEBUG - Nature: Extra Patrol, Count: 2
-2024-10-02 00:47:37,375 - DEBUG - Nature: Falls, Count: 4
-2024-10-02 00:47:37,375 - DEBUG - Nature: Fight, Count: 3
-2024-10-02 00:47:37,384 - DEBUG - Nature: Fire Alarm, Count: 3
-2024-10-02 00:47:37,384 - DEBUG - Nature: Fire Carbon Monoxide Alarm, Count: 2
-2024-10-02 00:47:37,386 - DEBUG - Nature: Fire Gas Leak, Count: 2
-2024-10-02 00:47:37,386 - DEBUG - Nature: Fire Residential, Count: 2
-2024-10-02 00:47:37,387 - DEBUG - Nature: Follow Up, Count: 4
-2024-10-02 00:47:37,387 - DEBUG - Nature: Found Item, Count: 2
-2024-10-02 00:47:37,387 - DEBUG - Nature: Fraud, Count: 4
-2024-10-02 00:47:37,387 - DEBUG - Nature: Harassment / Threats Report, Count: 4
-2024-10-02 00:47:37,387 - DEBUG - Nature: Headache, Count: 2
-2024-10-02 00:47:37,387 - DEBUG - Nature: Heart Problems/AICD, Count: 2
-2024-10-02 00:47:37,387 - DEBUG - Nature: Hemorrhage/Lacerations, Count: 6
-2024-10-02 00:47:37,389 - DEBUG - Nature: Hit and Run, Count: 3
-2024-10-02 00:47:37,389 - DEBUG - Nature: Larceny, Count: 10
-2024-10-02 00:47:37,389 - DEBUG - Nature: Loud Party, Count: 1
-2024-10-02 00:47:37,391 - DEBUG - Nature: MVA Non Injury, Count: 8
-2024-10-02 00:47:37,391 - DEBUG - Nature: MVA With Injuries, Count: 11
-2024-10-02 00:47:37,391 - DEBUG - Nature: Medical Call Pd Requested, Count: 2
-2024-10-02 00:47:37,391 - DEBUG - Nature: Missing Person, Count: 2
-2024-10-02 00:47:37,391 - DEBUG - Nature: Motorist Assist, Count: 5
-2024-10-02 00:47:37,391 - DEBUG - Nature: Mutual Aid, Count: 3
-2024-10-02 00:47:37,391 - DEBUG - Nature: Nature, Count: 1
-2024-10-02 00:47:37,391 - DEBUG - Nature: Noise Complaint, Count: 4
-2024-10-02 00:47:37,391 - DEBUG - Nature: Open Door/Premises Check, Count: 1
-2024-10-02 00:47:37,393 - DEBUG - Nature: Overdose/Poisoning, Count: 1
-2024-10-02 00:47:37,393 - DEBUG - Nature: Parking Problem, Count: 15
-2024-10-02 00:47:37,394 - DEBUG - Nature: Pick Up Partner, Count: 3
-2024-10-02 00:47:37,394 - DEBUG - Nature: Public Assist, Count: 6
-2024-10-02 00:47:37,394 - DEBUG - Nature: Reckless Driving, Count: 3
-2024-10-02 00:47:37,394 - DEBUG - Nature: Road Rage, Count: 1
-2024-10-02 00:47:37,394 - DEBUG - Nature: Runaway or Lost Child, Count: 8
-2024-10-02 00:47:37,394 - DEBUG - Nature: Shooting Stabbing Penetrating, Count: 1
-2024-10-02 00:47:37,395 - DEBUG - Nature: Shots Heard, Count: 1
-2024-10-02 00:47:37,395 - DEBUG - Nature: Sick Person, Count: 30
-2024-10-02 00:47:37,395 - DEBUG - Nature: Special Assignment, Count: 1
-2024-10-02 00:47:37,396 - DEBUG - Nature: Stand By EMS, Count: 3
-2024-10-02 00:47:37,396 - DEBUG - Nature: Stolen Vehicle, Count: 1
-2024-10-02 00:47:37,396 - DEBUG - Nature: Stroke, Count: 2
-2024-10-02 00:47:37,396 - DEBUG - Nature: Suspicious, Count: 6
-2024-10-02 00:47:37,396 - DEBUG - Nature: Test Call, Count: 11
-2024-10-02 00:47:37,396 - DEBUG - Nature: Traffic Stop, Count: 44
-2024-10-02 00:47:37,397 - DEBUG - Nature: Transfer/Interfacility, Count: 17
-2024-10-02 00:47:37,397 - DEBUG - Nature: Traumatic Injury, Count: 4
-2024-10-02 00:47:37,397 - DEBUG - Nature: Trespassing, Count: 8
-2024-10-02 00:47:37,397 - DEBUG - Nature: Unconscious/Fainting, Count: 11
-2024-10-02 00:47:37,398 - DEBUG - Nature: Unknown Problem/Man Down, Count: 2
-2024-10-02 00:47:37,398 - DEBUG - Nature: Vandalism, Count: 2
-2024-10-02 00:47:37,399 - DEBUG - Nature: Welfare Check, Count: 22
-2024-10-02 00:47:37,399 - INFO - Successfully printed status of incidents by nature
-2024-10-02 00:47:46,389 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
-2024-10-02 00:47:46,389 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
-2024-10-02 00:47:46,392 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
-2024-10-02 00:47:46,398 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
-2024-10-02 00:47:46,398 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
-2024-10-02 00:47:46,402 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
-2024-10-02 00:47:46,403 - INFO - Inserting extracted incidents into the database
-2024-10-02 00:47:46,407 - DEBUG - Successfully cleared the incidents table
-2024-10-02 00:47:46,409 - INFO - Successfully inserted incidents into the database
-2024-10-02 00:48:02,205 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
-2024-10-02 00:48:02,205 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
-2024-10-02 00:48:02,218 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
-2024-10-02 00:48:02,218 - INFO - Inserting extracted incidents into the database
-2024-10-02 00:48:02,221 - DEBUG - Successfully cleared the incidents table
-2024-10-02 00:48:02,225 - INFO - Successfully inserted incidents into the database
-2024-10-02 00:48:02,225 - INFO - Querying and printing status of incidents by nature
-2024-10-02 00:48:02,225 - DEBUG - Nature: 911 Call Nature Unknown, Count: 4
-2024-10-02 00:48:02,225 - DEBUG - Nature: Abdominal Pains/Problems, Count: 4
-2024-10-02 00:48:02,227 - DEBUG - Nature: Alarm, Count: 11
-2024-10-02 00:48:02,227 - DEBUG - Nature: Alarm Holdup/Panic, Count: 1
-2024-10-02 00:48:02,227 - DEBUG - Nature: Allergies/Envenomations, Count: 2
-2024-10-02 00:48:02,227 - DEBUG - Nature: Animal Complaint, Count: 3
-2024-10-02 00:48:02,227 - DEBUG - Nature: Animal Dead, Count: 2
-2024-10-02 00:48:02,227 - DEBUG - Nature: Animal Injured, Count: 1
-2024-10-02 00:48:02,228 - DEBUG - Nature: Animal Livestock, Count: 1
-2024-10-02 00:48:02,228 - DEBUG - Nature: Animal at Large, Count: 3
-2024-10-02 00:48:02,228 - DEBUG - Nature: Assault, Count: 1
-2024-10-02 00:48:02,228 - DEBUG - Nature: Assault EMS Needed, Count: 2
-2024-10-02 00:48:02,228 - DEBUG - Nature: Assist Police, Count: 1
-2024-10-02 00:48:02,228 - DEBUG - Nature: Back Pain, Count: 2
-2024-10-02 00:48:02,229 - DEBUG - Nature: Barking Dog, Count: 2
-2024-10-02 00:48:02,229 - DEBUG - Nature: Body Reported, Count: 1
-2024-10-02 00:48:02,229 - DEBUG - Nature: Breathing Problems, Count: 8
-2024-10-02 00:48:02,229 - DEBUG - Nature: Burglary, Count: 1
-2024-10-02 00:48:02,229 - DEBUG - Nature: COP DDACTS, Count: 1
-2024-10-02 00:48:02,229 - DEBUG - Nature: COP Problem Solving, Count: 1
-2024-10-02 00:48:02,229 - DEBUG - Nature: COP Relationships, Count: 5
-2024-10-02 00:48:02,229 - DEBUG - Nature: Cardiac Respritory Arrest, Count: 2
-2024-10-02 00:48:02,230 - DEBUG - Nature: Check Area, Count: 6
-2024-10-02 00:48:02,230 - DEBUG - Nature: Chest Pain, Count: 8
-2024-10-02 00:48:02,230 - DEBUG - Nature: Contact a Subject, Count: 23
-2024-10-02 00:48:02,230 - DEBUG - Nature: Convulsion/Seizure, Count: 6
-2024-10-02 00:48:02,230 - DEBUG - Nature: Debris in Roadway, Count: 1
-2024-10-02 00:48:02,230 - DEBUG - Nature: Diabetic Problems, Count: 2
-2024-10-02 00:48:02,232 - DEBUG - Nature: Disturbance/Domestic, Count: 19
-2024-10-02 00:48:02,232 - DEBUG - Nature: Extra Patrol, Count: 2
-2024-10-02 00:48:02,233 - DEBUG - Nature: Falls, Count: 4
-2024-10-02 00:48:02,233 - DEBUG - Nature: Fight, Count: 3
-2024-10-02 00:48:02,233 - DEBUG - Nature: Fire Alarm, Count: 3
-2024-10-02 00:48:02,233 - DEBUG - Nature: Fire Carbon Monoxide Alarm, Count: 2
-2024-10-02 00:48:02,233 - DEBUG - Nature: Fire Gas Leak, Count: 2
-2024-10-02 00:48:02,233 - DEBUG - Nature: Fire Residential, Count: 2
-2024-10-02 00:48:02,235 - DEBUG - Nature: Follow Up, Count: 4
-2024-10-02 00:48:02,235 - DEBUG - Nature: Found Item, Count: 2
-2024-10-02 00:48:02,235 - DEBUG - Nature: Fraud, Count: 4
-2024-10-02 00:48:02,235 - DEBUG - Nature: Harassment / Threats Report, Count: 4
-2024-10-02 00:48:02,235 - DEBUG - Nature: Headache, Count: 2
-2024-10-02 00:48:02,235 - DEBUG - Nature: Heart Problems/AICD, Count: 2
-2024-10-02 00:48:02,235 - DEBUG - Nature: Hemorrhage/Lacerations, Count: 6
-2024-10-02 00:48:02,235 - DEBUG - Nature: Hit and Run, Count: 3
-2024-10-02 00:48:02,235 - DEBUG - Nature: Larceny, Count: 10
-2024-10-02 00:48:02,235 - DEBUG - Nature: Loud Party, Count: 1
-2024-10-02 00:48:02,237 - DEBUG - Nature: MVA Non Injury, Count: 8
-2024-10-02 00:48:02,237 - DEBUG - Nature: MVA With Injuries, Count: 11
-2024-10-02 00:48:02,237 - DEBUG - Nature: Medical Call Pd Requested, Count: 2
-2024-10-02 00:48:02,237 - DEBUG - Nature: Missing Person, Count: 2
-2024-10-02 00:48:02,238 - DEBUG - Nature: Motorist Assist, Count: 5
-2024-10-02 00:48:02,238 - DEBUG - Nature: Mutual Aid, Count: 3
-2024-10-02 00:48:02,238 - DEBUG - Nature: Nature, Count: 1
-2024-10-02 00:48:02,238 - DEBUG - Nature: Noise Complaint, Count: 4
-2024-10-02 00:48:02,239 - DEBUG - Nature: Open Door/Premises Check, Count: 1
-2024-10-02 00:48:02,239 - DEBUG - Nature: Overdose/Poisoning, Count: 1
-2024-10-02 00:48:02,239 - DEBUG - Nature: Parking Problem, Count: 15
-2024-10-02 00:48:02,239 - DEBUG - Nature: Pick Up Partner, Count: 3
-2024-10-02 00:48:02,239 - DEBUG - Nature: Public Assist, Count: 6
-2024-10-02 00:48:02,239 - DEBUG - Nature: Reckless Driving, Count: 3
-2024-10-02 00:48:02,239 - DEBUG - Nature: Road Rage, Count: 1
-2024-10-02 00:48:02,240 - DEBUG - Nature: Runaway or Lost Child, Count: 8
-2024-10-02 00:48:02,240 - DEBUG - Nature: Shooting Stabbing Penetrating, Count: 1
-2024-10-02 00:48:02,240 - DEBUG - Nature: Shots Heard, Count: 1
-2024-10-02 00:48:02,240 - DEBUG - Nature: Sick Person, Count: 30
-2024-10-02 00:48:02,241 - DEBUG - Nature: Special Assignment, Count: 1
-2024-10-02 00:48:02,241 - DEBUG - Nature: Stand By EMS, Count: 3
-2024-10-02 00:48:02,241 - DEBUG - Nature: Stolen Vehicle, Count: 1
-2024-10-02 00:48:02,241 - DEBUG - Nature: Stroke, Count: 2
-2024-10-02 00:48:02,242 - DEBUG - Nature: Suspicious, Count: 6
-2024-10-02 00:48:02,242 - DEBUG - Nature: Test Call, Count: 11
-2024-10-02 00:48:02,242 - DEBUG - Nature: Traffic Stop, Count: 44
-2024-10-02 00:48:02,242 - DEBUG - Nature: Transfer/Interfacility, Count: 17
-2024-10-02 00:48:02,242 - DEBUG - Nature: Traumatic Injury, Count: 4
-2024-10-02 00:48:02,242 - DEBUG - Nature: Trespassing, Count: 8
-2024-10-02 00:48:02,242 - DEBUG - Nature: Unconscious/Fainting, Count: 11
-2024-10-02 00:48:02,242 - DEBUG - Nature: Unknown Problem/Man Down, Count: 2
-2024-10-02 00:48:02,242 - DEBUG - Nature: Vandalism, Count: 2
-2024-10-02 00:48:02,242 - DEBUG - Nature: Welfare Check, Count: 22
-2024-10-02 00:48:02,242 - INFO - Successfully printed status of incidents by nature
+2024-10-02 01:01:41,174 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-10-02 01:01:41,174 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-10-02 01:01:41,174 - INFO - Inserting extracted incidents into the database
+2024-10-02 01:01:41,184 - DEBUG - Successfully cleared the incidents table
+2024-10-02 01:01:41,184 - INFO - Successfully inserted incidents into the database
+2024-10-02 01:01:41,184 - INFO - Querying and printing status of incidents by nature
+2024-10-02 01:01:41,184 - DEBUG - Nature: 911 Call Nature Unknown, Count: 4
+2024-10-02 01:01:41,184 - DEBUG - Nature: Abdominal Pains/Problems, Count: 4
+2024-10-02 01:01:41,184 - DEBUG - Nature: Alarm, Count: 11
+2024-10-02 01:01:41,184 - DEBUG - Nature: Alarm Holdup/Panic, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: Allergies/Envenomations, Count: 2
+2024-10-02 01:01:41,184 - DEBUG - Nature: Animal Complaint, Count: 3
+2024-10-02 01:01:41,184 - DEBUG - Nature: Animal Dead, Count: 2
+2024-10-02 01:01:41,184 - DEBUG - Nature: Animal Injured, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: Animal Livestock, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: Animal at Large, Count: 3
+2024-10-02 01:01:41,184 - DEBUG - Nature: Assault, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: Assault EMS Needed, Count: 2
+2024-10-02 01:01:41,184 - DEBUG - Nature: Assist Police, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: Back Pain, Count: 2
+2024-10-02 01:01:41,184 - DEBUG - Nature: Barking Dog, Count: 2
+2024-10-02 01:01:41,184 - DEBUG - Nature: Body Reported, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: Breathing Problems, Count: 8
+2024-10-02 01:01:41,184 - DEBUG - Nature: Burglary, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: COP DDACTS, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: COP Problem Solving, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: COP Relationships, Count: 5
+2024-10-02 01:01:41,184 - DEBUG - Nature: Cardiac Respritory Arrest, Count: 2
+2024-10-02 01:01:41,184 - DEBUG - Nature: Check Area, Count: 6
+2024-10-02 01:01:41,184 - DEBUG - Nature: Chest Pain, Count: 8
+2024-10-02 01:01:41,184 - DEBUG - Nature: Contact a Subject, Count: 23
+2024-10-02 01:01:41,184 - DEBUG - Nature: Convulsion/Seizure, Count: 6
+2024-10-02 01:01:41,184 - DEBUG - Nature: Debris in Roadway, Count: 1
+2024-10-02 01:01:41,184 - DEBUG - Nature: Diabetic Problems, Count: 2
+2024-10-02 01:01:41,184 - DEBUG - Nature: Disturbance/Domestic, Count: 19
+2024-10-02 01:01:41,184 - DEBUG - Nature: Extra Patrol, Count: 2
+2024-10-02 01:01:41,184 - DEBUG - Nature: Falls, Count: 4
+2024-10-02 01:01:41,184 - DEBUG - Nature: Fight, Count: 3
+2024-10-02 01:01:41,196 - DEBUG - Nature: Fire Alarm, Count: 3
+2024-10-02 01:01:41,196 - DEBUG - Nature: Fire Carbon Monoxide Alarm, Count: 2
+2024-10-02 01:01:41,196 - DEBUG - Nature: Fire Gas Leak, Count: 2
+2024-10-02 01:01:41,196 - DEBUG - Nature: Fire Residential, Count: 2
+2024-10-02 01:01:41,197 - DEBUG - Nature: Follow Up, Count: 4
+2024-10-02 01:01:41,197 - DEBUG - Nature: Found Item, Count: 2
+2024-10-02 01:01:41,197 - DEBUG - Nature: Fraud, Count: 4
+2024-10-02 01:01:41,197 - DEBUG - Nature: Harassment / Threats Report, Count: 4
+2024-10-02 01:01:41,199 - DEBUG - Nature: Headache, Count: 2
+2024-10-02 01:01:41,199 - DEBUG - Nature: Heart Problems/AICD, Count: 2
+2024-10-02 01:01:41,199 - DEBUG - Nature: Hemorrhage/Lacerations, Count: 6
+2024-10-02 01:01:41,200 - DEBUG - Nature: Hit and Run, Count: 3
+2024-10-02 01:01:41,200 - DEBUG - Nature: Larceny, Count: 10
+2024-10-02 01:01:41,200 - DEBUG - Nature: Loud Party, Count: 1
+2024-10-02 01:01:41,200 - DEBUG - Nature: MVA Non Injury, Count: 8
+2024-10-02 01:01:41,202 - DEBUG - Nature: MVA With Injuries, Count: 11
+2024-10-02 01:01:41,202 - DEBUG - Nature: Medical Call Pd Requested, Count: 2
+2024-10-02 01:01:41,202 - DEBUG - Nature: Missing Person, Count: 2
+2024-10-02 01:01:41,202 - DEBUG - Nature: Motorist Assist, Count: 5
+2024-10-02 01:01:41,203 - DEBUG - Nature: Mutual Aid, Count: 3
+2024-10-02 01:01:41,203 - DEBUG - Nature: Nature, Count: 1
+2024-10-02 01:01:41,203 - DEBUG - Nature: Noise Complaint, Count: 4
+2024-10-02 01:01:41,203 - DEBUG - Nature: Open Door/Premises Check, Count: 1
+2024-10-02 01:01:41,204 - DEBUG - Nature: Overdose/Poisoning, Count: 1
+2024-10-02 01:01:41,204 - DEBUG - Nature: Parking Problem, Count: 15
+2024-10-02 01:01:41,204 - DEBUG - Nature: Pick Up Partner, Count: 3
+2024-10-02 01:01:41,205 - DEBUG - Nature: Public Assist, Count: 6
+2024-10-02 01:01:41,205 - DEBUG - Nature: Reckless Driving, Count: 3
+2024-10-02 01:01:41,205 - DEBUG - Nature: Road Rage, Count: 1
+2024-10-02 01:01:41,205 - DEBUG - Nature: Runaway or Lost Child, Count: 8
+2024-10-02 01:01:41,207 - DEBUG - Nature: Shooting Stabbing Penetrating, Count: 1
+2024-10-02 01:01:41,207 - DEBUG - Nature: Shots Heard, Count: 1
+2024-10-02 01:01:41,207 - DEBUG - Nature: Sick Person, Count: 30
+2024-10-02 01:01:41,207 - DEBUG - Nature: Special Assignment, Count: 1
+2024-10-02 01:01:41,209 - DEBUG - Nature: Stand By EMS, Count: 3
+2024-10-02 01:01:41,209 - DEBUG - Nature: Stolen Vehicle, Count: 1
+2024-10-02 01:01:41,209 - DEBUG - Nature: Stroke, Count: 2
+2024-10-02 01:01:41,209 - DEBUG - Nature: Suspicious, Count: 6
+2024-10-02 01:01:41,211 - DEBUG - Nature: Test Call, Count: 11
+2024-10-02 01:01:41,211 - DEBUG - Nature: Traffic Stop, Count: 44
+2024-10-02 01:01:41,211 - DEBUG - Nature: Transfer/Interfacility, Count: 17
+2024-10-02 01:01:41,211 - DEBUG - Nature: Traumatic Injury, Count: 4
+2024-10-02 01:01:41,213 - DEBUG - Nature: Trespassing, Count: 8
+2024-10-02 01:01:41,213 - DEBUG - Nature: Unconscious/Fainting, Count: 11
+2024-10-02 01:01:41,213 - DEBUG - Nature: Unknown Problem/Man Down, Count: 2
+2024-10-02 01:01:41,213 - DEBUG - Nature: Vandalism, Count: 2
+2024-10-02 01:01:41,215 - DEBUG - Nature: Welfare Check, Count: 22
+2024-10-02 01:01:41,215 - INFO - Successfully printed status of incidents by nature
+2024-10-02 01:03:01,515 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-10-02 01:03:01,515 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-10-02 01:03:01,515 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-10-02 01:03:01,515 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-10-02 01:03:01,515 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-10-02 01:03:01,515 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-10-02 01:03:01,515 - INFO - Inserting extracted incidents into the database
+2024-10-02 01:03:01,530 - DEBUG - Successfully cleared the incidents table
+2024-10-02 01:03:01,530 - INFO - Successfully inserted incidents into the database
+2024-10-02 12:45:19,535 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-10-02 12:45:19,535 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-10-02 12:45:19,557 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-10-02 12:45:19,557 - INFO - Inserting extracted incidents into the database
+2024-10-02 12:45:19,560 - DEBUG - Successfully cleared the incidents table
+2024-10-02 12:45:19,563 - INFO - Successfully inserted incidents into the database
+2024-10-02 12:45:19,563 - INFO - Querying and printing status of incidents by nature
+2024-10-02 12:45:19,563 - DEBUG - Nature: 911 Call Nature Unknown, Count: 1
+2024-10-02 12:45:19,563 - DEBUG - Nature: Abdominal Pains/Problems, Count: 4
+2024-10-02 12:45:19,563 - DEBUG - Nature: Alarm, Count: 12
+2024-10-02 12:45:19,563 - DEBUG - Nature: Alarm Holdup/Panic, Count: 2
+2024-10-02 12:45:19,563 - DEBUG - Nature: Animal Bite, Count: 1
+2024-10-02 12:45:19,563 - DEBUG - Nature: Animal Complaint, Count: 1
+2024-10-02 12:45:19,563 - DEBUG - Nature: Animal Dead, Count: 2
+2024-10-02 12:45:19,563 - DEBUG - Nature: Animal Injured, Count: 3
+2024-10-02 12:45:19,565 - DEBUG - Nature: Animal Trapped, Count: 2
+2024-10-02 12:45:19,565 - DEBUG - Nature: Animal at Large, Count: 3
+2024-10-02 12:45:19,565 - DEBUG - Nature: Assault, Count: 3
+2024-10-02 12:45:19,565 - DEBUG - Nature: Assault EMS Needed, Count: 2
+2024-10-02 12:45:19,565 - DEBUG - Nature: Assist Police, Count: 1
+2024-10-02 12:45:19,565 - DEBUG - Nature: Breathing Problems, Count: 4
+2024-10-02 12:45:19,565 - DEBUG - Nature: Burglary, Count: 3
+2024-10-02 12:45:19,565 - DEBUG - Nature: COP Problem Solving, Count: 2
+2024-10-02 12:45:19,565 - DEBUG - Nature: COP Relationships, Count: 2
+2024-10-02 12:45:19,565 - DEBUG - Nature: Cardiac Respritory Arrest, Count: 4
+2024-10-02 12:45:19,565 - DEBUG - Nature: Check Area, Count: 10
+2024-10-02 12:45:19,565 - DEBUG - Nature: Chest Pain, Count: 4
+2024-10-02 12:45:19,566 - DEBUG - Nature: Contact a Subject, Count: 17
+2024-10-02 12:45:19,566 - DEBUG - Nature: Convulsion/Seizure, Count: 4
+2024-10-02 12:45:19,566 - DEBUG - Nature: Diabetic Problems, Count: 4
+2024-10-02 12:45:19,566 - DEBUG - Nature: Disturbance/Domestic, Count: 15
+2024-10-02 12:45:19,566 - DEBUG - Nature: Drug Violation, Count: 4
+2024-10-02 12:45:19,566 - DEBUG - Nature: Drunk Driver, Count: 1
+2024-10-02 12:45:19,566 - DEBUG - Nature: EMS Mutual Aid, Count: 1
+2024-10-02 12:45:19,566 - DEBUG - Nature: Escort/Transport, Count: 2
+2024-10-02 12:45:19,566 - DEBUG - Nature: Extra Patrol, Count: 1
+2024-10-02 12:45:19,566 - DEBUG - Nature: Falls, Count: 11
+2024-10-02 12:45:19,566 - DEBUG - Nature: Fire Alarm, Count: 2
+2024-10-02 12:45:19,568 - DEBUG - Nature: Fire Gas Leak, Count: 1
+2024-10-02 12:45:19,568 - DEBUG - Nature: Fire Residential, Count: 2
+2024-10-02 12:45:19,568 - DEBUG - Nature: Fire Vehicle, Count: 1
+2024-10-02 12:45:19,569 - DEBUG - Nature: Follow Up, Count: 10
+2024-10-02 12:45:19,569 - DEBUG - Nature: Found Item, Count: 4
+2024-10-02 12:45:19,569 - DEBUG - Nature: Fraud, Count: 3
+2024-10-02 12:45:19,570 - DEBUG - Nature: Harassment / Threats Report, Count: 10
+2024-10-02 12:45:19,570 - DEBUG - Nature: Hit and Run, Count: 3
+2024-10-02 12:45:19,570 - DEBUG - Nature: Item Assignment, Count: 1
+2024-10-02 12:45:19,571 - DEBUG - Nature: Larceny, Count: 6
+2024-10-02 12:45:19,571 - DEBUG - Nature: Loud Party, Count: 1
+2024-10-02 12:45:19,571 - DEBUG - Nature: MVA Non Injury, Count: 4
+2024-10-02 12:45:19,571 - DEBUG - Nature: MVA With Injuries, Count: 7
+2024-10-02 12:45:19,572 - DEBUG - Nature: Medical Call Pd Requested, Count: 3
+2024-10-02 12:45:19,572 - DEBUG - Nature: Missing Person, Count: 1
+2024-10-02 12:45:19,572 - DEBUG - Nature: Motorist Assist, Count: 5
+2024-10-02 12:45:19,572 - DEBUG - Nature: Mutual Aid, Count: 3
+2024-10-02 12:45:19,573 - DEBUG - Nature: Nature, Count: 1
+2024-10-02 12:45:19,573 - DEBUG - Nature: Noise Complaint, Count: 5
+2024-10-02 12:45:19,573 - DEBUG - Nature: Officer in Danger, Count: 1
+2024-10-02 12:45:19,573 - DEBUG - Nature: Open Door/Premises Check, Count: 1
+2024-10-02 12:45:19,573 - DEBUG - Nature: Overdose/Poisoning, Count: 2
+2024-10-02 12:45:19,573 - DEBUG - Nature: Parking Problem, Count: 5
+2024-10-02 12:45:19,573 - DEBUG - Nature: Prowler, Count: 1
+2024-10-02 12:45:19,573 - DEBUG - Nature: Public Assist, Count: 2
+2024-10-02 12:45:19,575 - DEBUG - Nature: Public Intoxication, Count: 3
+2024-10-02 12:45:19,575 - DEBUG - Nature: Road Rage, Count: 1
+2024-10-02 12:45:19,575 - DEBUG - Nature: Robbery, Count: 1
+2024-10-02 12:45:19,575 - DEBUG - Nature: Runaway or Lost Child, Count: 7
+2024-10-02 12:45:19,575 - DEBUG - Nature: Sick Person, Count: 15
+2024-10-02 12:45:19,575 - DEBUG - Nature: Special Assignment, Count: 1
+2024-10-02 12:45:19,575 - DEBUG - Nature: Stolen Vehicle, Count: 2
+2024-10-02 12:45:19,575 - DEBUG - Nature: Supplement Report, Count: 6
+2024-10-02 12:45:19,575 - DEBUG - Nature: Suspicious, Count: 9
+2024-10-02 12:45:19,575 - DEBUG - Nature: Test Call, Count: 6
+2024-10-02 12:45:19,577 - DEBUG - Nature: Traffic Stop, Count: 36
+2024-10-02 12:45:19,577 - DEBUG - Nature: Transfer/Interfacility, Count: 14
+2024-10-02 12:45:19,577 - DEBUG - Nature: Traumatic Injury, Count: 4
+2024-10-02 12:45:19,577 - DEBUG - Nature: Trespassing, Count: 6
+2024-10-02 12:45:19,578 - DEBUG - Nature: Unconscious/Fainting, Count: 8
+2024-10-02 12:45:19,584 - DEBUG - Nature: Vandalism, Count: 3
+2024-10-02 12:45:19,589 - DEBUG - Nature: Warrant Service, Count: 1
+2024-10-02 12:45:19,589 - DEBUG - Nature: Welfare Check, Count: 29
+2024-10-02 12:45:19,589 - INFO - Successfully printed status of incidents by nature
+2024-10-03 14:18:47,866 - INFO - Checking if 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-10-03 14:18:47,866 - DEBUG - Removed the existing 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-10-03 14:18:47,890 - INFO - Successfully created new 'D:\3rd Sem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-10-03 14:18:47,890 - INFO - Inserting extracted incidents into the database
+2024-10-03 14:18:47,893 - DEBUG - Successfully cleared the incidents table
+2024-10-03 14:18:47,896 - INFO - Successfully inserted incidents into the database
+2024-10-03 14:18:47,896 - INFO - Querying and printing status of incidents by nature
+2024-10-03 14:18:47,898 - DEBUG - Nature: 911 Call Nature Unknown, Count: 1
+2024-10-03 14:18:47,898 - DEBUG - Nature: Alarm, Count: 11
+2024-10-03 14:18:47,898 - DEBUG - Nature: Alarm Holdup/Panic, Count: 2
+2024-10-03 14:18:47,899 - DEBUG - Nature: Animal Complaint, Count: 4
+2024-10-03 14:18:47,899 - DEBUG - Nature: Animal Dead, Count: 8
+2024-10-03 14:18:47,899 - DEBUG - Nature: Animal Trapped, Count: 2
+2024-10-03 14:18:47,899 - DEBUG - Nature: Animal Vicious, Count: 1
+2024-10-03 14:18:47,899 - DEBUG - Nature: Animal at Large, Count: 2
+2024-10-03 14:18:47,899 - DEBUG - Nature: Assault, Count: 4
+2024-10-03 14:18:47,899 - DEBUG - Nature: Assist Fire, Count: 1
+2024-10-03 14:18:47,899 - DEBUG - Nature: Assist Police, Count: 1
+2024-10-03 14:18:47,900 - DEBUG - Nature: Barking Dog, Count: 1
+2024-10-03 14:18:47,900 - DEBUG - Nature: Body Reported, Count: 1
+2024-10-03 14:18:47,900 - DEBUG - Nature: Breathing Problems, Count: 6
+2024-10-03 14:18:47,900 - DEBUG - Nature: Burglary, Count: 2
+2024-10-03 14:18:47,900 - DEBUG - Nature: COP Problem Solving, Count: 1
+2024-10-03 14:18:47,900 - DEBUG - Nature: Carbon Mon/Inhalation/HazMat, Count: 1
+2024-10-03 14:18:47,900 - DEBUG - Nature: Cardiac Respritory Arrest, Count: 2
+2024-10-03 14:18:47,901 - DEBUG - Nature: Check Area, Count: 10
+2024-10-03 14:18:47,901 - DEBUG - Nature: Chest Pain, Count: 12
+2024-10-03 14:18:47,901 - DEBUG - Nature: Contact a Subject, Count: 18
+2024-10-03 14:18:47,901 - DEBUG - Nature: Convulsion/Seizure, Count: 7
+2024-10-03 14:18:47,901 - DEBUG - Nature: Disturbance/Domestic, Count: 20
+2024-10-03 14:18:47,901 - DEBUG - Nature: Drug Violation, Count: 4
+2024-10-03 14:18:47,901 - DEBUG - Nature: Drunk Driver, Count: 1
+2024-10-03 14:18:47,903 - DEBUG - Nature: Escort/Transport, Count: 3
+2024-10-03 14:18:47,903 - DEBUG - Nature: Falls, Count: 10
+2024-10-03 14:18:47,903 - DEBUG - Nature: Fight, Count: 1
+2024-10-03 14:18:47,903 - DEBUG - Nature: Fire Alarm, Count: 3
+2024-10-03 14:18:47,904 - DEBUG - Nature: Fire Electrical Check, Count: 1
+2024-10-03 14:18:47,904 - DEBUG - Nature: Fire Gas Leak, Count: 1
+2024-10-03 14:18:47,904 - DEBUG - Nature: Fire Residential, Count: 2
+2024-10-03 14:18:47,904 - DEBUG - Nature: Follow Up, Count: 9
+2024-10-03 14:18:47,904 - DEBUG - Nature: Foot Patrol, Count: 2
+2024-10-03 14:18:47,904 - DEBUG - Nature: Found Item, Count: 2
+2024-10-03 14:18:47,905 - DEBUG - Nature: Fraud, Count: 12
+2024-10-03 14:18:47,905 - DEBUG - Nature: Harassment / Threats Report, Count: 7
+2024-10-03 14:18:47,905 - DEBUG - Nature: Heart Problems/AICD, Count: 4
+2024-10-03 14:18:47,905 - DEBUG - Nature: Heat/Cold Exposure, Count: 3
+2024-10-03 14:18:47,905 - DEBUG - Nature: Hemorrhage/Lacerations, Count: 3
+2024-10-03 14:18:47,905 - DEBUG - Nature: Hit and Run, Count: 1
+2024-10-03 14:18:47,906 - DEBUG - Nature: Item Assignment, Count: 4
+2024-10-03 14:18:47,906 - DEBUG - Nature: Larceny, Count: 16
+2024-10-03 14:18:47,906 - DEBUG - Nature: MVA Non Injury, Count: 5
+2024-10-03 14:18:47,907 - DEBUG - Nature: MVA With Injuries, Count: 12
+2024-10-03 14:18:47,907 - DEBUG - Nature: Medical Call Pd Requested, Count: 2
+2024-10-03 14:18:47,907 - DEBUG - Nature: Motorist Assist, Count: 3
+2024-10-03 14:18:47,907 - DEBUG - Nature: Mutual Aid, Count: 1
+2024-10-03 14:18:47,907 - DEBUG - Nature: Nature, Count: 1
+2024-10-03 14:18:47,907 - DEBUG - Nature: Noise Complaint, Count: 1
+2024-10-03 14:18:47,909 - DEBUG - Nature: Officer Needed Nature Unk, Count: 1
+2024-10-03 14:18:47,909 - DEBUG - Nature: Overdose/Poisoning, Count: 2
+2024-10-03 14:18:47,909 - DEBUG - Nature: Parking Problem, Count: 5
+2024-10-03 14:18:47,909 - DEBUG - Nature: Pick Up Partner, Count: 3
+2024-10-03 14:18:47,910 - DEBUG - Nature: Preg/Child Birth/Miscarriage, Count: 4
+2024-10-03 14:18:47,910 - DEBUG - Nature: Public Assist, Count: 3
+2024-10-03 14:18:47,910 - DEBUG - Nature: Reckless Driving, Count: 4
+2024-10-03 14:18:47,910 - DEBUG - Nature: Road Rage, Count: 1
+2024-10-03 14:18:47,911 - DEBUG - Nature: Sick Person, Count: 20
+2024-10-03 14:18:47,911 - DEBUG - Nature: Stake Out, Count: 1
+2024-10-03 14:18:47,912 - DEBUG - Nature: Stroke, Count: 2
+2024-10-03 14:18:47,912 - DEBUG - Nature: Supplement Report, Count: 6
+2024-10-03 14:18:47,912 - DEBUG - Nature: Suspicious, Count: 8
+2024-10-03 14:18:47,912 - DEBUG - Nature: Traffic Stop, Count: 56
+2024-10-03 14:18:47,912 - DEBUG - Nature: Transfer/Interfacility, Count: 22
+2024-10-03 14:18:47,913 - DEBUG - Nature: Trespassing, Count: 6
+2024-10-03 14:18:47,913 - DEBUG - Nature: Unconscious/Fainting, Count: 3
+2024-10-03 14:18:47,913 - DEBUG - Nature: Unknown Problem/Man Down, Count: 2
+2024-10-03 14:18:47,913 - DEBUG - Nature: Vandalism, Count: 4
+2024-10-03 14:18:47,913 - DEBUG - Nature: Welfare Check, Count: 23
+2024-10-03 14:18:47,913 - INFO - Successfully printed status of incidents by nature
+2024-12-03 21:04:53,461 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 21:04:53,461 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-03 21:04:53,483 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-03 21:04:53,485 - INFO - Inserting extracted incidents into the database
+2024-12-03 21:04:53,486 - DEBUG - Successfully cleared the incidents table
+2024-12-03 21:04:53,490 - INFO - Successfully inserted incidents into the database
+2024-12-03 21:04:53,490 - INFO - Querying and printing status of incidents by nature
+2024-12-03 21:04:53,494 - DEBUG - Nature: 911 Call Nature Unknown, Count: 2
+2024-12-03 21:04:53,494 - DEBUG - Nature: Abdominal Pains/Problems, Count: 2
+2024-12-03 21:04:53,494 - DEBUG - Nature: Alarm, Count: 8
+2024-12-03 21:04:53,494 - DEBUG - Nature: Animal Injured, Count: 1
+2024-12-03 21:04:53,497 - DEBUG - Nature: Animal Livestock, Count: 1
+2024-12-03 21:04:53,497 - DEBUG - Nature: Animal Vicious, Count: 1
+2024-12-03 21:04:53,498 - DEBUG - Nature: Assault, Count: 1
+2024-12-03 21:04:53,498 - DEBUG - Nature: Assist Police, Count: 1
+2024-12-03 21:04:53,498 - DEBUG - Nature: Barking Dog, Count: 1
+2024-12-03 21:04:53,498 - DEBUG - Nature: Breathing Problems, Count: 10
+2024-12-03 21:04:53,499 - DEBUG - Nature: COP DDACTS, Count: 1
+2024-12-03 21:04:53,499 - DEBUG - Nature: COP Problem Solving, Count: 5
+2024-12-03 21:04:53,499 - DEBUG - Nature: Check Area, Count: 11
+2024-12-03 21:04:53,500 - DEBUG - Nature: Chest Pain, Count: 4
+2024-12-03 21:04:53,500 - DEBUG - Nature: Choking, Count: 2
+2024-12-03 21:04:53,501 - DEBUG - Nature: Civil Standby, Count: 3
+2024-12-03 21:04:53,501 - DEBUG - Nature: Contact a Subject, Count: 11
+2024-12-03 21:04:53,501 - DEBUG - Nature: Convulsion/Seizure, Count: 2
+2024-12-03 21:04:53,503 - DEBUG - Nature: Disturbance/Domestic, Count: 9
+2024-12-03 21:04:53,503 - DEBUG - Nature: Extra Patrol, Count: 3
+2024-12-03 21:04:53,503 - DEBUG - Nature: Eye Problems/Injuries, Count: 2
+2024-12-03 21:04:53,504 - DEBUG - Nature: Falls, Count: 9
+2024-12-03 21:04:53,504 - DEBUG - Nature: Fire Alarm, Count: 1
+2024-12-03 21:04:53,504 - DEBUG - Nature: Fire Carbon Monoxide Alarm, Count: 2
+2024-12-03 21:04:53,504 - DEBUG - Nature: Fire Commercial, Count: 2
+2024-12-03 21:04:53,506 - DEBUG - Nature: Fire Gas Leak, Count: 2
+2024-12-03 21:04:53,507 - DEBUG - Nature: Fire Odor Investigation, Count: 1
+2024-12-03 21:04:53,507 - DEBUG - Nature: Follow Up, Count: 6
+2024-12-03 21:04:53,507 - DEBUG - Nature: Foot Patrol, Count: 1
+2024-12-03 21:04:53,507 - DEBUG - Nature: Found Item, Count: 2
+2024-12-03 21:04:53,510 - DEBUG - Nature: Harassment / Threats Report, Count: 2
+2024-12-03 21:04:53,510 - DEBUG - Nature: Hemorrhage/Lacerations, Count: 4
+2024-12-03 21:04:53,511 - DEBUG - Nature: Hit and Run, Count: 1
+2024-12-03 21:04:53,511 - DEBUG - Nature: Larceny, Count: 7
+2024-12-03 21:04:53,511 - DEBUG - Nature: MVA Non Injury, Count: 5
+2024-12-03 21:04:53,511 - DEBUG - Nature: MVA With Injuries, Count: 12
+2024-12-03 21:04:53,511 - DEBUG - Nature: Missing Person, Count: 2
+2024-12-03 21:04:53,511 - DEBUG - Nature: Motorist Assist, Count: 4
+2024-12-03 21:04:53,511 - DEBUG - Nature: Mutual Aid, Count: 1
+2024-12-03 21:04:53,511 - DEBUG - Nature: Nature, Count: 1
+2024-12-03 21:04:53,516 - DEBUG - Nature: Noise Complaint, Count: 4
+2024-12-03 21:04:53,516 - DEBUG - Nature: Open Door/Premises Check, Count: 3
+2024-12-03 21:04:53,516 - DEBUG - Nature: Overdose/Poisoning, Count: 2
+2024-12-03 21:04:53,518 - DEBUG - Nature: Parking Problem, Count: 2
+2024-12-03 21:04:53,518 - DEBUG - Nature: Pick Up Partner, Count: 2
+2024-12-03 21:04:53,519 - DEBUG - Nature: Public Assist, Count: 5
+2024-12-03 21:04:53,519 - DEBUG - Nature: Reckless Driving, Count: 1
+2024-12-03 21:04:53,520 - DEBUG - Nature: Sick Person, Count: 23
+2024-12-03 21:04:53,520 - DEBUG - Nature: Special Assignment, Count: 1
+2024-12-03 21:04:53,520 - DEBUG - Nature: Stolen Vehicle, Count: 1
+2024-12-03 21:04:53,520 - DEBUG - Nature: Stroke, Count: 2
+2024-12-03 21:04:53,522 - DEBUG - Nature: Suspicious, Count: 9
+2024-12-03 21:04:53,522 - DEBUG - Nature: Traffic Stop, Count: 139
+2024-12-03 21:04:53,522 - DEBUG - Nature: Transfer/Interfacility, Count: 14
+2024-12-03 21:04:53,522 - DEBUG - Nature: Trespassing, Count: 4
+2024-12-03 21:04:53,522 - DEBUG - Nature: Unconscious/Fainting, Count: 1
+2024-12-03 21:04:53,523 - DEBUG - Nature: Welfare Check, Count: 8
+2024-12-03 21:04:53,523 - INFO - Successfully printed status of incidents by nature
+2024-12-03 21:56:26,763 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 21:56:26,763 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-03 21:56:26,779 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-03 21:56:29,556 - INFO - Inserting extracted incidents into the database
+2024-12-03 21:56:29,566 - DEBUG - Successfully cleared the incidents table
+2024-12-03 21:56:29,567 - INFO - Successfully inserted incidents into the database
+2024-12-03 21:57:42,127 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 21:57:42,131 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-03 21:57:42,135 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-03 21:57:46,447 - INFO - Inserting extracted incidents into the database
+2024-12-03 21:57:46,453 - DEBUG - Successfully cleared the incidents table
+2024-12-03 21:57:46,459 - INFO - Successfully inserted incidents into the database
+2024-12-03 21:57:55,769 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 22:00:49,581 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 22:00:49,583 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-03 22:00:49,588 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-03 22:00:53,010 - INFO - Inserting extracted incidents into the database
+2024-12-03 22:00:53,022 - DEBUG - Successfully cleared the incidents table
+2024-12-03 22:00:53,031 - INFO - Successfully inserted incidents into the database
+2024-12-03 22:03:00,673 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 22:03:30,763 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 22:03:30,763 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-03 22:03:30,769 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-03 22:03:34,133 - INFO - Inserting extracted incidents into the database
+2024-12-03 22:03:34,138 - DEBUG - Successfully cleared the incidents table
+2024-12-03 22:03:34,140 - INFO - Successfully inserted incidents into the database
+2024-12-03 22:09:00,602 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 22:09:00,604 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-03 22:09:00,608 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-03 22:09:02,537 - INFO - Inserting extracted incidents into the database
+2024-12-03 22:09:02,547 - DEBUG - Successfully cleared the incidents table
+2024-12-03 22:09:02,548 - INFO - Successfully inserted incidents into the database
+2024-12-03 22:09:28,563 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 22:09:28,563 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-03 22:09:28,568 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-03 22:09:31,125 - INFO - Inserting extracted incidents into the database
+2024-12-03 22:09:31,130 - DEBUG - Successfully cleared the incidents table
+2024-12-03 22:09:31,132 - INFO - Successfully inserted incidents into the database
+2024-12-03 22:10:53,870 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 22:10:53,870 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-03 22:10:53,877 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-03 22:10:56,421 - INFO - Inserting extracted incidents into the database
+2024-12-03 22:10:56,430 - DEBUG - Successfully cleared the incidents table
+2024-12-03 22:10:56,440 - INFO - Successfully inserted incidents into the database
+2024-12-03 22:11:35,827 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-03 22:11:35,829 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-03 22:11:35,834 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-03 22:11:39,115 - INFO - Inserting extracted incidents into the database
+2024-12-03 22:11:39,123 - DEBUG - Successfully cleared the incidents table
+2024-12-03 22:11:39,123 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:19:41,504 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:19:41,509 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:19:41,522 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:19:55,848 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:19:55,848 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:19:55,858 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:25:58,094 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:25:58,094 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:25:58,102 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:25:58,102 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:25:58,110 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:25:58,114 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:31:10,302 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:31:10,302 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:31:10,309 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:31:10,311 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:31:10,312 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:31:10,315 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:32:46,014 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:32:46,014 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:32:46,017 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:32:46,017 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:32:46,022 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:32:46,024 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:46:33,252 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:46:33,252 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:46:33,257 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:46:33,257 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:46:33,260 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:46:33,263 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:50:10,125 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:50:10,126 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:50:10,133 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:50:10,133 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:50:10,134 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:50:10,139 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:50:21,894 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:50:21,894 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:50:21,901 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:50:21,901 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:50:21,904 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:50:21,905 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:51:07,173 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:51:07,173 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:51:07,179 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:51:07,179 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:51:07,183 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:51:07,184 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:51:33,096 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:51:33,096 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:51:33,103 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:51:33,104 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:51:33,105 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:51:33,108 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:52:35,342 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:52:35,342 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:52:35,349 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:52:35,349 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:52:35,352 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:52:35,353 - INFO - Successfully inserted incidents into the database
+2024-12-04 19:59:34,006 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 19:59:34,007 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 19:59:34,011 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 19:59:34,011 - INFO - Inserting extracted incidents into the database
+2024-12-04 19:59:34,013 - DEBUG - Successfully cleared the incidents table
+2024-12-04 19:59:34,017 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:07:01,638 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:07:01,645 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:07:01,653 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:07:01,653 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:07:01,656 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:07:01,661 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:09:32,326 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:09:32,327 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:09:32,335 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:09:32,335 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:09:32,340 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:09:32,343 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:10:02,469 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:10:02,469 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:10:02,477 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:10:02,477 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:10:02,477 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:10:02,486 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:10:50,584 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:10:50,584 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:10:50,596 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:10:50,596 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:10:50,600 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:10:50,607 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:11:44,946 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:11:44,946 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:11:44,950 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:11:44,950 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:11:44,958 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:11:44,962 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:12:29,847 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:12:29,847 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:12:29,856 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:12:29,856 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:12:29,863 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:12:29,864 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:34:12,591 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:34:12,592 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:34:12,595 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:34:12,597 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:34:12,600 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:34:12,606 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:39:40,688 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:39:40,688 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:39:40,702 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:39:40,702 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:39:40,707 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:39:40,715 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:42:51,251 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:42:51,251 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:42:51,251 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:42:51,251 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:42:51,258 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:42:51,264 - INFO - Successfully inserted incidents into the database
+2024-12-04 20:48:40,780 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 20:48:40,780 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 20:48:40,786 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 20:48:40,786 - INFO - Inserting extracted incidents into the database
+2024-12-04 20:48:40,793 - DEBUG - Successfully cleared the incidents table
+2024-12-04 20:48:40,801 - INFO - Successfully inserted incidents into the database
+2024-12-04 21:26:48,619 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 21:26:48,619 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 21:26:48,633 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 21:26:48,633 - INFO - Inserting extracted incidents into the database
+2024-12-04 21:26:48,638 - DEBUG - Successfully cleared the incidents table
+2024-12-04 21:26:48,643 - INFO - Successfully inserted incidents into the database
+2024-12-04 21:28:04,290 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 21:28:04,290 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 21:28:04,302 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 21:28:04,302 - INFO - Inserting extracted incidents into the database
+2024-12-04 21:28:04,310 - DEBUG - Successfully cleared the incidents table
+2024-12-04 21:28:04,320 - INFO - Successfully inserted incidents into the database
+2024-12-04 21:30:21,511 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 21:30:21,511 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 21:30:21,520 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 21:30:21,520 - INFO - Inserting extracted incidents into the database
+2024-12-04 21:30:21,528 - DEBUG - Successfully cleared the incidents table
+2024-12-04 21:30:21,533 - INFO - Successfully inserted incidents into the database
+2024-12-04 21:38:51,977 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 21:38:51,978 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 21:38:51,987 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 21:38:51,987 - INFO - Inserting extracted incidents into the database
+2024-12-04 21:38:51,991 - DEBUG - Successfully cleared the incidents table
+2024-12-04 21:38:51,995 - INFO - Successfully inserted incidents into the database
+2024-12-04 21:40:32,742 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 21:40:32,749 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 21:40:32,759 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 21:40:32,759 - INFO - Inserting extracted incidents into the database
+2024-12-04 21:40:32,763 - DEBUG - Successfully cleared the incidents table
+2024-12-04 21:40:32,772 - INFO - Successfully inserted incidents into the database
+2024-12-04 21:44:13,349 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 21:44:13,349 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 21:44:13,359 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 21:44:13,359 - INFO - Inserting extracted incidents into the database
+2024-12-04 21:44:13,362 - DEBUG - Successfully cleared the incidents table
+2024-12-04 21:44:13,369 - INFO - Successfully inserted incidents into the database
+2024-12-04 21:47:01,435 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 21:47:01,435 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 21:47:01,438 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 21:47:01,438 - INFO - Inserting extracted incidents into the database
+2024-12-04 21:47:01,442 - DEBUG - Successfully cleared the incidents table
+2024-12-04 21:47:01,445 - INFO - Successfully inserted incidents into the database
+2024-12-04 21:56:45,317 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 21:56:45,319 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 21:56:45,319 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 21:56:45,319 - INFO - Inserting extracted incidents into the database
+2024-12-04 21:56:45,332 - DEBUG - Successfully cleared the incidents table
+2024-12-04 21:56:45,338 - INFO - Successfully inserted incidents into the database
+2024-12-04 21:57:42,285 - INFO - Checking if 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' exists and creating a new one if needed
+2024-12-04 21:57:42,285 - DEBUG - Removed the existing 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database
+2024-12-04 21:57:42,292 - INFO - Successfully created new 'D:\3rdSem\DE\cis6930fa24-project0\resources\normanpd.db' database and 'incidents' table with all fields
+2024-12-04 21:57:42,292 - INFO - Inserting extracted incidents into the database
+2024-12-04 21:57:42,294 - DEBUG - Successfully cleared the incidents table
+2024-12-04 21:57:42,298 - INFO - Successfully inserted incidents into the database
