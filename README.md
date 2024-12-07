@@ -4,8 +4,6 @@ Name: Venkata Naga Satya Avinash Gudipudi
 
 # Project Descripition 
 
-# The Unredactor - Incident Data Analysis Tool
-
 Develop an interactive web interface to visualize data from Norman Police Department incident PDFs. The interface should allow users to upload files via URL or direct upload and display three visualizations: clustering of records, a bar graph comparison, and a custom visualization.
 
 # Key Features
@@ -72,11 +70,11 @@ To execute the project, navigate to the project directory and run the following 
 
 1. To output a page use command:
 
-         python main.py
+        pipenv run python main.py  
 
 2. For Test Cases 
 
-        python tests/test.py
+        pipenv run python -m pytest tests/test.py
 
 
 ## Video 
@@ -86,7 +84,7 @@ Step 1: Starting the Application
 To run the project, navigate to the project directory in your terminal and execute the main.py script. This initializes the Flask server, typically accessible via localhost on a specific port, commonly 5000. You can start the server using:
 
 bash
-python main.py
+pipenv run python main.py
 
 Once the server is running, you can access the application by opening a web browser and navigating to http://localhost:5000.
 
