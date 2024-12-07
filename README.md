@@ -79,6 +79,14 @@ To execute the project, navigate to the project directory and run the following 
 
 ## Video 
 
+Cloud Link : https://www.youtube.com/watch?v=RsxokzAh0TM
+
+https://github.com/user-attachments/assets/2c5db8cb-2afa-42b3-b0b2-814dd075d7f5
+
+
+
+
+
 ## Code Workflow
 Step 1: Starting the Application
 To run the project, navigate to the project directory in your terminal and execute the main.py script. This initializes the Flask server, typically accessible via localhost on a specific port, commonly 5000. You can start the server using:
